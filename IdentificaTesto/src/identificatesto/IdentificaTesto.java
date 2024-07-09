@@ -31,7 +31,40 @@ public class identificatesto {
         for (int i = 0; i < tipiTesto.length; i++) {
             alsd[i] = new LinkedList<>();
             String tipoTesto = tipiTesto[i];
-        }return alsd;
+        }try {
+                File[] lista = (new File("testi/" + tipoTesto)).listFiles();
+                for (int j = 0; j < lista.length; j++) {
+                    SOP(tipoTesto + " " + lista[j].getName());
+                    StrutturaDati sd = new StrutturaDati(tipoTesto, j, lista[j]);
+                    alsd[i].add(sd);
+                    
+                }
+            } catch (Exception e) {
+            }
+            //StrutturaDati sd = new StrutturaDati(tipoTesto);
+        
+        return alsd;
+    }
+
+    public static void exportCsv(LinkedList<StrutturaDati>[] alsd, identificatesto.identificatesto.Statistiche[] s) throws FileNotFoundException {
+        try {
+            FileWriter f = new FileWriter("output.csv");
+            BufferedWriter b = new BufferedWriter(f);
+            b.write("Tipo,Titolo,%Spazi,%Virgole,%ACapo,%Punti,%Rime\n");
+            for (int i = 0; i < alsd.length; i++) {
+                //Nodo n = alsd.getNodeByIndex(i);
+                for (int j = 0; j < alsd[i].size(); j++) {
+                    StrutturaDati p = alsd[i].get(j);
+                    b.write(p.tipoTesto + "," + p.titolo.replace(",", "") + ",");
+                    for(int k = 0; k<p.length; k++) {
+                        b.write(p.getNodeByIndex(k).valore+",");
+                    }
+                    b.write("\n");
     }
 }
+}
+}
+}
+
+
     
