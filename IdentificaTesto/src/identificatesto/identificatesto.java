@@ -108,7 +108,37 @@ public class identificatesto {
         return m/x.size();
     }
     
-     static void stampaStats(Statistiche[] s) {
+    static Statistiche[] calcolaPerClassificazione(LinkedList<StrutturaDati>[] llsd) {
+        Statistiche[] s = new Statistiche[4];
+        String[] tipiTesto = {"Fumetti","Poesie","Romanzi","Tecnico"};
+        for(int i=0;i<tipiTesto.length;i++) {
+            s[i] = new Statistiche();
+            s[i].tipoTesto = tipiTesto[i];
+            LinkedList<Double> x = new LinkedList<>();
+            for(StrutturaDati sd: llsd[i])
+                x.add(sd.getValore("percPunti"));
+            s[i].pp.media = media(x);
+            s[i].pp.devStd = devStd(x);
+            x.clear();
+            for(StrutturaDati sd: llsd[i])
+                x.add(sd.getValore("percVirgole"));
+            s[i].pv.media = media(x);
+            s[i].pv.devStd = devStd(x);
+            x.clear();
+            for(StrutturaDati sd: llsd[i])
+                x.add(sd.getValore("percACapo"));
+            s[i].pac.media = media(x);
+            s[i].pac.devStd = devStd(x);
+            x.clear();
+            for(StrutturaDati sd: llsd[i])
+                x.add(sd.getValore("percSpazi"));
+            s[i].ps.media = media(x);
+            s[i].ps.devStd = devStd(x);
+        }
+        return s;
+    }
+    
+    static void stampaStats(Statistiche[] s) {
         for(int i=0;i<s.length;i++) {
             SOP(s[i].tipoTesto+":");
             SOP("   pp => media:"+s[i].pp.media+", devStd:"+s[i].pp.devStd);
@@ -118,17 +148,7 @@ public class identificatesto {
         }
     }
     
-    public static void main(String[] args) throws FileNotFoundException {
-        LinkedList<StrutturaDati>[] alsd = creaStrutturaDati(); // Creazione strut.
-        stampa(alsd); // Stampa*/
-        
-        Statistiche[] s = calcolaPerClassificazione(alsd);
-        stampaStats(s);
-        
-        exportCsv(alsd, s);
-        //L'OUTPUT FINALE SI TROVA SUL FILE "StatisticheDati.ods", che si trova in questo file
-        
-    }
+    
     
 }
 
