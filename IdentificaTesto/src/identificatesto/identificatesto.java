@@ -108,6 +108,28 @@ public class identificatesto {
         return m/x.size();
     }
     
+     static void stampaStats(Statistiche[] s) {
+        for(int i=0;i<s.length;i++) {
+            SOP(s[i].tipoTesto+":");
+            SOP("   pp => media:"+s[i].pp.media+", devStd:"+s[i].pp.devStd);
+            SOP("   ps => media:"+s[i].ps.media+", devStd:"+s[i].ps.devStd);
+            SOP("   pac => media:"+s[i].pac.media+", devStd:"+s[i].pac.devStd);
+            SOP("   pv => media:"+s[i].pv.media+", devStd:"+s[i].pv.devStd);
+        }
+    }
+    
+    public static void main(String[] args) throws FileNotFoundException {
+        LinkedList<StrutturaDati>[] alsd = creaStrutturaDati(); // Creazione strut.
+        stampa(alsd); // Stampa*/
+        
+        Statistiche[] s = calcolaPerClassificazione(alsd);
+        stampaStats(s);
+        
+        exportCsv(alsd, s);
+        //L'OUTPUT FINALE SI TROVA SUL FILE "StatisticheDati.ods", che si trova in questo file
+        
+    }
+    
 }
 
 
