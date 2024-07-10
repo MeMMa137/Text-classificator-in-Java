@@ -69,5 +69,21 @@ void stampa() {
         float vpr = percRime.controllaRime(lt);
         insStat("PercRime", vpr);
     }
+    
+    void insStat(String nome, float valore) {
+        Nodo n = new Nodo(nome, valore);
+        if(h == null)
+            h = n;
+        else {
+            Nodo p = h;
+            while(p.next != null){
+                p = p.next;
+            }
+            p.next = n;
+        }
+        length++;
+    }
+    
+    
 }
     
