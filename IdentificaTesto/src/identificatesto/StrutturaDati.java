@@ -28,3 +28,24 @@ public class StrutturaDati {
         return 0;
     }
     
+void stampa() {
+        Nodo p = h;
+        while(p != null) {
+            System.out.print("      "+p.nome + ": "+Float.toString(p.valore) + "\n");
+            p = p.next;
+        }
+    }
+    Nodo getNodeByIndex(int index){
+        Nodo p = h;
+        int i = 0;
+        while(i != index){
+            p = p.next;
+            i++;
+        }
+        if(p!=null)
+            return p;
+        else
+            return null;
+    }
+}
+    
