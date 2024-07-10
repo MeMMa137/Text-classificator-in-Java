@@ -47,5 +47,17 @@ void stampa() {
         else
             return null;
     }
+    
+    void calcolaStats() {
+        Interfaccia i = new Interfaccia(file);
+        i.leggiFile();
+        LinkedList<String> lt = i.getLinkedList();
+        titolo = lt.get(0).trim();
+        PercSpazi ps = new PercSpazi(lt);
+        float vps = ps.calcolaPercSpazi();
+        insStat("percSpazi",vps);
+        PercVirgole pv = new PercVirgole(lt);
+        float vpv = pv.calcolaPercVirgole();
+        insStat("percVirgole",vpv);}
 }
     
