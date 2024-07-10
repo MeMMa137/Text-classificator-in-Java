@@ -58,6 +58,16 @@ void stampa() {
         insStat("percSpazi",vps);
         PercVirgole pv = new PercVirgole(lt);
         float vpv = pv.calcolaPercVirgole();
-        insStat("percVirgole",vpv);}
+        insStat("percVirgole",vpv);
+        PercentualeAcapo pac = new PercentualeAcapo(lt);
+        float vpac = pac.calPercentualeAcapo();
+        insStat("percACapo",vpac);
+        PercPunti pp = new PercPunti(lt);
+        float vpp = pp.calcpercPunti();
+        insStat("percPunti",vpp);
+        PercRime percRime = new PercRime();
+        float vpr = percRime.controllaRime(lt);
+        insStat("PercRime", vpr);
+    }
 }
     
