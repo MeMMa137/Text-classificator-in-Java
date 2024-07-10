@@ -23,4 +23,28 @@ final public void stampaTest(){
         return listTesti;
     }
     
+    final public void leggiFile() {
+        try {
+            //cosa che può andare male
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+            
+            while (true) {
+                String riga = br.readLine();
+                if (riga == null) {
+                    break;
+                }
+                if(riga.length()==0 && (listTesti.size()==0 ||  listTesti.size()==2))
+                    riga=null;
+                else
+                    listTesti.add(riga);
+               
+            }
+            br.close();
+        } catch (Exception e) {
+            //Err
+            System.out.println(e.toString()+"classe: file2string Funzione: leggiFile()");
+        }
+    }
+    
 }
