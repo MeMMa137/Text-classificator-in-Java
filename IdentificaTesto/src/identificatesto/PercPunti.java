@@ -15,7 +15,7 @@ class PercPunti {
                 if(riga[j]=='.')
                     ns++;
             n+=riga.length;
-        }
+        }s
         return (float)ns/n;
     }   
 }
