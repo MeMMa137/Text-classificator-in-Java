@@ -145,4 +145,59 @@ public class PercRime {
         int rimeTrovate;
 
     }
-}
+    
+    public ControlloAABB(LinkedList<String> righe) {
+            this.righe = righe;
+        }
+        
+        @Override
+        public void run(){
+            rimeTrovate = controllaAABB(righe);
+        }
+        
+        private static int controllaAABB(LinkedList<String> righe) {
+        
+            String firstAStr = "";
+            String firstBStr = "";
+            String secondAStr = "";
+            String secondBStr = "";
+
+            //"nRigheAllaVolta" e' il numero di righe che andiamo a controllare alla volta (in questo caso 4 --> AABB)
+            //nota: senza la limitazione di "nRigheAllaVolta" si va a "sforare" la lista
+            int nRigheAllaVolta=4;
+            //Variabile di incremento per contare il numero di rime
+            int j=0;
+
+            for(int i=0;i<righe.size()-nRigheAllaVolta;i++){
+               try{
+                  //prendo l'ultima parola della righa usando .split
+                  //che retituisce un array di parole separate da " " (spazi)
+                  //andando a prendere l'ultima parola (lenght -1)
+                  //Nota: 
+                  //  se cambi la "i" o " " nella parte di sinistra devi farlo anche a destra
+                  firstAStr = righe.get(i).split(" ")[righe.get(i).split(" ").length-1];
+                  secondAStr = righe.get(i+1).split(" ")[righe.get(i+1).split(" ").length-1];
+                  firstBStr = righe.get(i+2).split(" ")[righe.get(i+2).split(" ").length-1];
+                  secondBStr = righe.get(i+3).split(" ")[righe.get(i+3).split(" ").length-1];
+                  //eliminazione di eventuali caratteri indesiderati di fine stringa come ; , " - _ < > . ! | ) (
+                  firstAStr = removePunctuation(firstAStr);
+                  secondAStr = removePunctuation(secondAStr);
+                  firstBStr = removePunctuation(firstBStr);
+                  secondBStr = removePunctuation(secondBStr);
+                  //eliminazione degli accenti
+                  firstAStr = removeAccents(firstAStr);
+                  secondAStr = removeAccents(secondAStr);
+                  firstBStr = removeAccents(firstBStr);
+                  secondBStr = removeAccents(secondBStr);
+                  //Incremento se AA e BB rimano contemporaneamente
+                  if(areWordsRhyming(firstAStr, secondAStr) && areWordsRhyming(firstBStr, secondBStr)){
+                      j++;
+                  }
+               }catch(Exception e){return j;}
+            }
+            //restituisco il numero di rime
+            return j;
+        }
+    }
+
+
