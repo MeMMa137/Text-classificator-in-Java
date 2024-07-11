@@ -37,3 +37,25 @@ public class PercRime {
       cCDEEDC.start();
       cABABCB.start();
       
+      //riunione dei thread una volta che finiscono
+      try {
+         cAABB.join();
+         cABAB.join();
+         cABBA.join();
+         cCDECDE.join();
+         cCDEEDC.join();
+         cABABCB.join();
+      } catch (Exception e) {}
+      //sommatoria
+      float somma = 0;
+      somma+=cAABB.rimeTrovate;
+      somma+=cABAB.rimeTrovate;
+      somma+=cABBA.rimeTrovate;
+      somma+=cCDECDE.rimeTrovate;
+      somma+=cCDEEDC.rimeTrovate;
+      somma+=cABABCB.rimeTrovate;
+      
+      //return di % rime ripetto righe
+      return somma/righe.size();
+   }
+}
