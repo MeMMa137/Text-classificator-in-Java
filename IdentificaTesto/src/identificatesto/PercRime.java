@@ -58,4 +58,33 @@ public class PercRime {
       //return di % rime ripetto righe
       return somma/righe.size();
    }
+   
+    // Metodo per confrontare le rime tra due stringhe
+    private static boolean areWordsRhyming(String word1, String word2) {
+        // Lunghezza delle stringhe
+        int length1 = word1.length();
+        int length2 = word2.length();
+
+        // Trova la lunghezza minima tra le due stringhe
+        int minLength = Math.min(length1, length2);
+        // Conto il numero di volte che un carattere fa rima con un altro
+        int j=0;
+
+        // Confronta e scorre i caratteri alla fine delle due stringhe contando quante volte rimano
+        for (int i = 1; i <= minLength; i++) {
+            if (word1.endsWith(word2.substring(length2 - i))) {
+                j++;
+            }
+        }
+        
+        //se la lungezza min e' 1 e il numero di caratteri che rimano e' 1 (true)
+        if(minLength == 1 && j >= 1){ 
+            return true;
+        }
+        //se la rima e' piu lunga di 1 carattere
+        else {
+            return j>1;
+        }
+    }
+    
 }
