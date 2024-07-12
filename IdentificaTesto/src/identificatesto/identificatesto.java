@@ -31,7 +31,7 @@ public class identificatesto {
         for (int i = 0; i < tipiTesto.length; i++) {
             alsd[i] = new LinkedList<>();
             String tipoTesto = tipiTesto[i];
-        }try {
+            try {
                 File[] lista = (new File("testi/" + tipoTesto)).listFiles();
                 for (int j = 0; j < lista.length; j++) {
                     SOP(tipoTesto + " " + lista[j].getName());
@@ -42,7 +42,7 @@ public class identificatesto {
             } catch (Exception e) {
             }
             //StrutturaDati sd = new StrutturaDati(tipoTesto);
-        
+        }
         return alsd;
     }
 
@@ -107,6 +107,16 @@ public class identificatesto {
         }
         return m/x.size();
     }
+    static double devStd(LinkedList<Double> x){
+        double m = media(x);
+        //scarto
+        double s=0;
+        for(double xi:x){
+            s+=(xi-m)*(xi-m);
+        }
+        s/=x.size();
+        return Math.sqrt(s);
+    }
     
     static Statistiche[] calcolaPerClassificazione(LinkedList<StrutturaDati>[] llsd) {
         Statistiche[] s = new Statistiche[4];
@@ -148,8 +158,18 @@ public class identificatesto {
         }
     }
     
-    
-    
+    public static void main(String[] args) throws FileNotFoundException {
+        LinkedList<StrutturaDati>[] alsd = creaStrutturaDati(); // Creazione strut.
+        stampa(alsd); // Stampa*/
+        
+        Statistiche[] s = calcolaPerClassificazione(alsd);
+        stampaStats(s);
+        
+        exportCsv(alsd, s);
+        //L'OUTPUT FINALE SI TROVA SUL FILE "StatisticheDati.ods", che si trova in questo file
+        
+    }
+
 }
 
 

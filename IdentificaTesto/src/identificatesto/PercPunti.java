@@ -1,4 +1,5 @@
 package identificatesto;
+
 import java.util.LinkedList;
 
 class PercPunti {
@@ -15,7 +16,7 @@ class PercPunti {
                 if(riga[j]=='.')
                     ns++;
             n+=riga.length;
-        }s
+        }
         return (float)ns/n;
-    }   
+    }    
 }
