@@ -2,6 +2,7 @@
 package identificatesto;
 
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,5 +22,20 @@ public class lunghezzaPeriodo {
 
                 if (carattere != '.') { //se non trova un punto
                     conteggioCaratteri++; //aumenta il numero di caratteri nel periodo
+                }else { //se trova un punto
+                    nCaratteriTotali=nCaratteriTotali+conteggioCaratteri; //aggiunge gli elementi al conteggio numeri totali
+                    listaDiIntero.add(conteggioCaratteri); //aggiunge il "salvataggio" del numero di caratteri in un periodo, e lo inserisce in una lista
+                    conteggioCaratteri = 0; //azzera il conteggio per iniziare di nuovo
+                    nElementiLista++; //aggiunge al conteggio di elementi presenti nella lista
+                    
                 }
+
+            }
+            System.out.println("i caratteri nei periodi sono: " + listaDiIntero+"\n");
+            System.out.println("la media dei caratteri nei periodi sono: " + nCaratteriTotali / nElementiLista);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
