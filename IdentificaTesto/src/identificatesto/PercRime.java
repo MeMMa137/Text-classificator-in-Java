@@ -394,6 +394,59 @@ public class PercRime {
             rimeTrovate = controllaCDEEDC(righe);
         }
         
+        private static int controllaCDEEDC(LinkedList<String> righe) {
+
+            String firstCStr = "";
+            String firstDStr = "";
+            String firstEStr = "";
+            String secondCStr = "";
+            String secondDStr = "";
+            String secondEStr = "";
+
+            //"nRigheAllaVolta" e' il numero di righe che andiamo a controllare alla volta (in questo caso 4 --> AABB)
+            //nota: senza la limitazione di "nRigheAllaVolta" si va a "sforare" la lista
+            int nRigheAllaVolta=6;
+            //Variabile di incremento per contare il numero di rime
+            int j=0;
+
+            for(int i=0;i<righe.size()-nRigheAllaVolta;i++){
+               try{
+                  //prendo l'ultima parola della righa usando .split
+                  //che retituisce un array di parole separate da " " (spazi)
+                  //andando a prendere l'ultima parola (lenght -1)
+                  //Nota: 
+                  //  se cambi la "i" o " " nella parte di sinistra devi farlo anche a destra
+                  firstCStr = righe.get(i).split(" ")[righe.get(i).split(" ").length-1];
+                  secondCStr = righe.get(i+5).split(" ")[righe.get(i+5).split(" ").length-1];
+                  firstDStr = righe.get(i+1).split(" ")[righe.get(i+1).split(" ").length-1];
+                  secondDStr = righe.get(i+4).split(" ")[righe.get(i+4).split(" ").length-1];
+                  firstEStr = righe.get(i+2).split(" ")[righe.get(i+2).split(" ").length-1];
+                  secondEStr = righe.get(i+3).split(" ")[righe.get(i+3).split(" ").length-1];
+                  //eliminazione di eventuali caratteri indesiderati di fine stringa come ; , " - _ < > . ! | ) (
+                  firstCStr = removePunctuation(firstCStr);
+                  secondCStr = removePunctuation(secondCStr);
+                  firstDStr = removePunctuation(firstDStr);
+                  secondDStr = removePunctuation(secondDStr);
+                  firstEStr = removePunctuation(firstEStr);
+                  secondEStr = removePunctuation(secondEStr);
+                  //rimozione degli accenti
+                  firstCStr = removeAccents(firstCStr);
+                  secondCStr = removeAccents(secondCStr);
+                  firstDStr = removeAccents(firstDStr);
+                  secondDStr = removeAccents(secondDStr);
+                  firstEStr = removeAccents(firstEStr);
+                  secondEStr = removeAccents(secondEStr);
+                  //Incremento se CDE EDC rimano
+                  if(areWordsRhyming(firstCStr, secondCStr) && areWordsRhyming(firstDStr, secondDStr) && areWordsRhyming(firstEStr, secondEStr)){
+                      j++;
+                  }
+               }catch(Exception e){return j;}
+            }
+            //restituisco il numero di rime
+            return j;
+        }
+    }
+        
          private final static class ControlloABABCB extends Thread{
         LinkedList<String> righe;
         int rimeTrovate;
