@@ -1,0 +1,62 @@
+I Fotoni
+
+In fisica, il fotone (dal greco φως "phos", che significa luce) è considerato una delle
+particelle elementari. Il termine fu infatti coniato da Gilbert Lewis nel 1926.
+Normalmente al fotone è associato al simbolo γ (gamma), ma bisogna precisare subito
+che questa identificazione avviene solo per i fotoni delle alte energie, mentre per i fotoni
+con livello di energia immediatamente inferiore, come ad esempio i raggi X, si utilizza il
+simbolo X .
+Proprietà dei Fotoni
+I fotoni vengono spesso associati soltanto con la luce visibile, (alla quale sono correlati
+solo per uno stretto spettro di frequenze), ma in realtà, essi possono essere associati ad
+ogni tipo di radiazione elettromagnetica.
+Bisogna precisare subito che la radiazione che riscontriamo comunemente, non
+corrisponde a fotoni puri, ma a sovrapposizioni di differenti fotoni.
+Possiamo avere infatti:
+• sovrapposizioni coerenti (dette anche stati coerenti) che descrivono la luce
+coerente, come quella emessa da un laser ideale;
+• sovrapposizioni caotiche (dette anche stati termici) che descrivono la luce in
+equilibrio termico (tipico esempio è la radiazione del corpo nero).
+I fotoni possono essere prodotti in molti modi, inclusa l'emissione da elettroni che
+cambiano di stato orbitale.
+I Fotoni possono essere anche creati per transizione nucleare, annichilazione particellaantiparticella o qualsiasi fluttuazione del campo elettromagnetico.
+In accordo con il così detto dualismo onda-corpuscolo descritto dalla meccanica
+quantistica, è naturale per il fotone mostrare uno dei due aspetti della sua natura, a
+seconda della strumentazione usata per rilevarlo:
+• se ad esempio viene rilevato da un fotomoltiplicatore, il fotone agisce come una
+particella;
+• se osservato con strumentazione ottica, esso si comporta come un'onda (fenomeni
+di diffrazione e interferenza).
+Lo stato quantico associato ad un fotone è lo stato di Fock, e è indicato con |n>, che
+significa n fotoni nel campo elettromagnetico modale. Se il campo è multimodo, il suo stato
+quantico è un prodotto tensoriale degli stati fotonici.
+Proprietà dei Fotoni
+Essendo ritenuti particelle fondamentali, la vita dei fotoni è infinita: possono infatti essere
+creati e distrutti interagendo con altre particelle, ma non è noto che possano decadere
+spontaneamente.
+I Fotoni, hanno spin 1 e sono quindi classificati come bosoni. Hanno massa invariante pari
+a zero ma una quantità di energia definita (e finita) alla velocità della luce. Nonostante ciò,
+la teoria della relatività generale ci dice che sono influenzati dalla gravità, e questo è stato
+confermato dalle osservazioni.
+Secondo le teorie fisiche accreditate, una particella non relativistica di spin 1 è dotata di tre
+possibili proiezioni (o stati) dello spin (−1, 0 e +1). Tuttavia il fotone, ha solo due proiezioni
+di spin, in quanto la proiezione zero richiede che il fotone sia fermo, e questa in accordo
+con la teoria della relatività, non è possibile.
+Ma come si comportano i fotoni nel vuoto?
+Nel vuoto, i fotoni si muovono alla velocità della luce c, definita pari a 299.792.458 m/s
+(ovvero
+dove le costanti ε0 e μ0 sono la costante dielettrica e la permeabilità magnetica nel vuoto, e
+si può stimare una velocità di circa 3x10
+8 m/s.
+I Fotoni nella Materia
+Nella Materia i fotoni si comportano differentemente, in base alle eccitazioni del mezzo
+che incontrano e con il quale interagiscono. Quando ad esempio si accoppiano ai fononi o
+agli eccitoni, il risultato di questa interazione, produce i polaritoni.
+Quando questa interazione avviene, i fotoni acquisiscono una massa effettiva, e quindi la
+loro velocità scende sotto quella della luce nel vuoto.
+Esistono diversi meccanismi di interazione Fotoni-Materia o Radiazione-Materia.
+A seconda dell'energia dei fotoni incidenti, gli effetti più probabili possono essere
+schematizzati come segue:
+• 1 eV–100 keV Effetto fotoelettrico,
+• 100 keV–1 MeV Effetto Compton,
+• 1,022 MeV in poi Produzione di coppia.

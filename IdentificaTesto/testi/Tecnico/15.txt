@@ -1,0 +1,147 @@
+Come progettare una scala: criteri, norme ed esempi da scaricare
+
+Progettazione scale interne: ecco la guida completa con criteri generali, regolamenti, esempi e file da scaricare subito
+
+
+
+Progettare una scala non è proprio un’operazione semplice. Occorre tenere in conto regole, tipologie, funzionalità, resa estetica, ecc. Se devi progettare una scala e cerchi consigli utili per la progettazione (calcolo dello sfalsamento, normativa e regolamenti vigenti, titoli abilitativi necessari, ecc.), in questo articolo trovi una guida pratica e completa di schemi, approfondimenti tecnici ed esempi delle tipologie di scale più utilizzate. Scarica subito i modelli delle diverse tipologie di scale interne (a L, a tenaglia, a chiocciola, ecc.) ed utilizzali come riferimento per il tuo lavoro.
+
+
+Tipi di scala
+Le scale possono essere classificate in funzione del materiale adottato:
+scale in c.a.;
+scale in acciaio;
+scale in legno.
+I tipi più diffusi di scale in c.a. sono:
+scala a soletta rampante, costituita da una soletta in c.a. armata (una sorta di trave a spessore) sulla quale sono realizzati i gradini. Strutturalmente la soletta poggia su una trave di partenza e una di arrivo;
+scala con trave a ginocchio, costituita da una particolare trave emergente, detta trave a ginocchio per la sua particolare forma a ‘z’, su cui sono innestati i gradini con comportamento a mensola.
+Le scale possono essere classificate anche in ragione della pendenza. Una scala può essere:
+a pioli, se è quasi verticale e dunque i gradini fungono da appoggio per i piedi tanto quanto da appiglio per le mani;
+tecnica, se la pendenza è comunque molto elevata (superiore ai 50°); queste scale sono previste per usi occasionali di manutenzione e simili;
+comune, compresa tra i 20° e i 45°; quelle ad uso privato hanno generalmente i valori maggiori di pendenza.
+
+
+Progettazione scale interne, la forma della scala
+Lo spazio che si ha a disposizione e la posizione che andrà ad occupare la scala, influiscono sul tipo di forma da adottare.
+Sfruttare al meglio un angolo o una parete significa scegliere un modello piuttosto che un altro.
+La forma in pianta del corpo scala può essere un poligono regolare o irregolare, un cerchio, un’ellisse, ecc.
+I gradini devono sempre essere perpendicolari ai muri della gabbia, in modo che le irregolarità siano concentrate nei pianerottoli.
+Il vano scala nella maggior parte dei casi può essere:
+a pianta rettangolare, con spazio sufficiente per due rampe parallele che si incontrano nei pianerottoli di piano o interpiano;
+a pianta quadrata, con la scala che gira intorno al vano ascensore (scala a pozzo);
+a pianta circolare (o in certi casi ellittica), in tal caso si parla di scala a chiocciola.
+Scale interne a rampa
+Le scale a rampa sono indicate per due situazioni in particolare:
+quando la scala è da addossare a una parete;
+quando occorre sfruttare un angolo.
+La scala a rampa può essere:
+con andamento lineare, che è la più comune e utilizzata
+con due rampe ad angolo, spesso composte dallo stesso numero di gradini e interrotte da un piano intermedio (e che nella pianta viene ad assumere forma rettangolare o quadrata)
+con due rampe dritte collegate però da gradini disposti a ventaglio (che in pianto assumeranno un andamento curvilineo)
+con rampe miste, costituite da un tratto curvilineo e da uno rettilineo
+Scale interne a chiocciola
+Le scale a chiocciola, elicoidali o circolari, sono consigliate quando occorre posizionare la scala al centro di una stanza.
+Le scale a chiocciola possono essere di due tipi:
+con i gradini agganciati a un elemento centrale, detto spina o piantone, fissato a terra e a soffitto e con funzione portante;
+senza il sostegno centrale, nel qual caso la struttura della scala viene assicurata a terra e al punto di arrivo.
+Hanno un ingombro a terra minimo e sono quindi indicate quando lo spazio a disposizione è limitato. In pianta, le scale a chiocciola possono avere pianta circolare, quadrata o ellittica.
+
+
+
+
+I dati che incidono sulla scelta del modello di scala sono:
+differenza tra i due livelli da collegare: quando questa differenza non supera i 250 cm si può utilizzare una scala a rampa continua, quando supera i 300 cm si può utilizzare un modello ad angolo, mentre per altezze maggiori è consigliabile un modello con pianerottolo intermedio che interrompe la salita;
+ingombro che la scala potrà occupare a terra;
+peso della scala stessa e quello che mediamente dovrà sostenere;
+posizione di porte e finestre e di altri elementi che è importante lasciare liberi, per evitare che la scala impedisca aperture e accessi;
+posizione della scala stessa all’interno delle stanze: in un angolo, addossata a una parete, al centro di una stanza.
+
+
+
+
+Progettazione scale interne, lo sfalsamento
+Uno degli aspetti progettuali più importanti di una scala (e spesso molto sottovalutato) è lo sfalsamento da assegnare alle rampe.
+Si definisce sfalsamento la distanza tra l’ultima alzata della prima rampa e la prima alzata della seconda rampa.
+Rappresenta un ‘artificio strutturale’ che garantisce una serie di vantaggi (sia estetici che funzionali), primo tra tutto la continuità del corrimano. A livello estetico è assicurato l’allineamento tra gli intradossi delle rampe e l’intradosso del pianerottolo.
+La continuità del corrimano all’interno di una scala in un edificio è importante non solo per garantire la sicurezza dei fruitori della scala, ma anche perché offre la possibilità, in caso di presenza di persone disabili, di montare un eventuale montascale.
+In funzione delle grandezze geometriche in gioco, è possibile avere 3 tipi di sfalsamento:
+sfalsamento in avanti, quando la prima alzata della seconda rampa si trova più avanti dell’ultima alzata della prima rampa
+sfalsamento indietro, quando la prima alzata della seconda rampa si trova più avanti dell’ultima alzata della prima rampa
+sfalsamento nullo, quando le due alzate risultano allineate
+Nel caso in cui d=a/2 (massetto + rivestimento gradino pari alla metà dell’alzata), lo sfalsamento risulta nullo e le alzate delle 2 rampe risultano allineate.
+Nella figura sottostante la parte evidenziata in rosso (costituita da massetto + rivestimento) è pari a metà dell’alzata: il risultato ottenuto è proprio uno sfalsamento pari a 0 (l’ultima alzata della rampa di arrivo – alzata 1-  è perfettamente allineata alla prima alzata della rampa di partenza – alzata 2).
+
+
+Progettazione scale interne, normative nazionali e regolamenti edilizi
+Gli aspetti normativi, strutturali, ergonomici e di sicurezza per la progettazione delle scale sono regolati dalla Legge 13/1989 e dal dm 236/1989.
+legge 13/1989 (eliminazione delle barriere architettoniche);
+dm 14 giugno 1989 n. 236 (regolamento di attuazione della legge 13/1989);
+dm 10 marzo 1998 (Criteri generali di sicurezza antincendio e per la gestione dell’emergenza nei luoghi di lavoro).
+È importante tuttavia fare sempre riferimento ai Regolamenti Edilizi Comunali: nella maggior parte dei Comuni le rampe di una scala interna (non considerata per uso pubblico) devono presentare una larghezza minima di 80 cm.
+Oltre a prevedere la larghezza della rampa, va considerato il dislivello che si vuole coprire per scegliere la corretta alzata e pedata.
+Per costruire una scala interna è necessaria una regolare progettazione del gradino, di conseguenza è opportuno rispettare il rapporto fra alzata (a) e pedata (p): 2a + p = 63 cm.
+Da questa formula si deduce che l’alzata ideale è inferiore a 19 cm, mentre la pedata ideale è di 30 cm.
+Bisogna precisare però che per usi domestici la pedata può restringersi considerevolmente e sono accettabili alzate leggermente superiori a quella prevista dal regolamento.
+Come progettare correttamente la scala
+Nel progetto di una scala è opportuno che:
+i gradini siano, almeno per ciascun interpiano, tutti uguali;
+sia previsto un pianerottolo di sosta al massimo ogni 15 gradini;
+i pianerottoli abbiano larghezza non inferiore a quella delle rampe;
+se possibile, impiegare rampe ad asse rettilineo.
+
+
+Larghezza delle rampe
+La larghezza della rampa è funzione del numero di persone che vi possono transitare contemporaneamente e dell’uso a cui è adibita.
+La larghezza delle scale, così come quella dei corridoi, deve essere dimensionata in rapporto al flusso massimo di persone ipotizzabile o determinabile che può attraversarla.
+Il flusso di persone massimo viene calcolato nella ipotesi di esodo contemporaneo di tutte le persone che abitano, lavorano o svolgono comunque qualsiasi altro tipo di attività nei locali che hanno accesso dalla scala, rampa o cordonata in esame.
+Per la maggior parte dei locali pubblici o aperti al pubblico, la larghezza delle scale in rapporto al deflusso massimo (esodo), così come altre caratteristiche tecniche (rapporto alzata/pedata, caratteristiche delle pavimentazioni, ecc.), viene prescritta da normative specifiche relative alla agibilità di tali locali.
+La rampa delle scale interne deve essere larga almeno 80 cm, mentre nel caso di una scala a chiocciola il diametro deve essere almeno di 110 cm. Rispetto al pavimento, l’inclinazione della rampa della scala deve essere compresa fra i 30 e i 60 gradi.
+Protezioni
+Gli elementi orizzontali o verticali che compongono la ringhiera, devono essere a una distanza massima l’uno dall’altro di 10 cm, mentre il corrimano va posto a 90 cm dai gradini. Nel caso di una balaustra, questa deve essere alta almeno un metro dai gradini.
+Per impedire ai bambini troppo piccoli l’accesso alla scala, si possono utilizzare gli stessi cancelletti che si utilizzano per impedire l’uscita dei piccoli su balconi o terrazzi. Si tratta di ringhiere, a volte estensibili per scale di larghezze diverse, che si fissano con ventose a entrambi i lati della rampa oppure si applicano alla scala tramite cerniere laterali. L’apertura di queste protezioni può essere manuale, oppure a serratura o con meccanismo elettronico. Tali protezioni possono essere in legno o in metallo.
+
+
+
+
+Portata
+La scala deve essere in grado di sopportare un peso di 400 kg al metro quadro.
+Alzata e pedata
+Relativamente alla progettazione di alzata e pedata occorre valutare innanzitutto il dislivello da superare.
+L’alzata generalmente è compresa tra i 15 e i 17 cm (max 20 cm in scale di servizio), in edifici pubblici (ospedali, scuole) 13-15 cm; la pedata invece è calcolata tramite relazioni empiriche basate sul lavoro svolto dall’utente nell’affrontare il dislivello.
+La formula generalmente usata (già citata in precedenza) è quella di Blondel:
+2a + p = 62 ÷ 64 cm
+in cui a = alzata e p = pedata.
+Per scale interne a singoli alloggi il rapporto può essere incrementato come segue:
+2a + p = ÷ 65 (valore massimo di a = 23 cm)
+E’ consigliabile non superare i 15 gradini a scala e comunque è preferibile avere un maggior numero di gradini piuttosto che alzate troppo grandi, altrimenti le scale risulteranno troppo ripide. Se il gradino poi ha profilo anteriore arrotondato, risulta più pratico e sicuro.
+
+
+Scala a tenaglia
+Quali sono i titoli abilitativi necessari per costruire una scala?
+Il titolo abilitativo da ottenere per realizzare una scala dipende dal tipo di intervento che si va a realizzare.
+In linea di massima, si può affermare che l’inserimento di una scala interna ex novo, che presuppone la demolizione di una parte del solaio o una modifica strutturale richiede come titolo abilitativo la SCIA. Se l’intervento, invece, riguarda immobili sottoposti a particolari vincoli architettonici o storici, può essere necessario il Permesso di Costruire.
+Nell’eventualità in cui l’intervento non implichi modifiche strutturali o si tratti di una semplice sostituzione di una scala esistente, potrebbe bastare la CILA, configurandosi un intervento di manutenzione straordinaria.
+Se si tratta infine di una riparazione, conservando pendenza, posizione, sagoma e materiali uguali ai preesistenti, l’intervento può ricadere nell’edilizia libera.
+
+
+ 
+Progettazione scale interne: 10 cose da ricordare
+Prima di iniziare il progetto è necessario consultare i regolamenti del Comune di riferimento;
+Le norme nazionali di riferimento sono principalmente:
+legge 13/1989 (eliminazione delle barriere architettoniche);
+dm 14 giugno 1989 n. 236 (regolamento di attuazione della legge 13/1989);
+dm 10 marzo 1998 (Criteri generali di sicurezza antincendio e per la gestione dell’emergenza nei luoghi di lavoro);
+Le scale devono presentare un andamento regolare ed omogeneo per tutto il loro sviluppo;
+Per ogni rampa di scale i gradini devono avere la stessa alzata e pedata;
+Le rampe devono contenere possibilmente lo stesso numero di gradini, caratterizzati da un corretto rapporto tra alzata e pedata;
+I gradini delle scale devono avere una pedata antisdrucciolevole a pianta preferibilmente rettangolare e con un profilo preferibilmente continuo a spigoli arrotondati;
+Devono essere dotate di parapetto atto a costituire difesa verso il vuoto e di corrimano. I corrimano devono essere di facile prendibilità e realizzati con materiale resistente e non tagliente;
+Le rampe di scale che non costituiscono parte comune o non sono di uso pubblico devono avere una larghezza minima di 0,80 m;
+Le scale comuni e quelle degli edifici aperti al pubblico devono avere i seguenti ulteriori requisiti:
+la larghezza delle rampe e dei pianerottoli deve permettere il passaggio contemporaneo di due persone ed il passaggio orizzontale di una barella con una inclinazione massima del 15% lungo l’asse longitudinale;
+la lunghezza delle rampe deve essere contenuta; in caso contrario si deve interporre un ripiano in grado di arrestare la caduta di un corpo umano;
+il corrimano, di altezza 1 m da terra, deve essere installato su entrambi i lati in caso di utenza prevalente di bambini si deve prevedere un secondo corrimano ad altezza proporzionata;
+è preferibile una illuminazione naturale laterale. Si deve dotare la scala di una illuminazione artificiale, anche essa laterale, con comando individuabile al buio e disposto su ogni pianerottolo;
+le rampe di scale devono essere facilmente percepibili, anche per i non vedenti;
+devono avere una larghezza minima di 1,20 m, avere una pendenza limitata e costante per l’intero sviluppo della scala;
+La progettazione di scale, ad uso pubblico o privato, necessita di calcolo strutturale.

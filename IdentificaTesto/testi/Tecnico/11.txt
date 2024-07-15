@@ -1,0 +1,70 @@
+La termodinamica
+
+La termodinamica studia gli scambi di energia, tra il sistema e l’ambiente, che
+si verificano durante una trasformazione (fisica o chimica), allo scopo di individuare le condizioni di equilibrio o di spontanea evoluzione del sistema stesso.
+Nel caso delle reazioni chimiche, la termodinamica ci consente di valutare se una
+reazione può avvenire spontaneamente e quali saranno le condizioni di equilibrio
+tra reagenti e prodotti (in reazioni reversibili).
+Il sistema termodinamico si considera in equilibrio quando le sue caratteristiche (temperatura, pressione, volume, concentrazione delle sostanze presenti)
+si mantengono costanti nel tempo.
+Un sistema che non è in equilibrio tende spontaneamente a evolvere per raggiungere la condizione di equilibrio.
+I sistemi chimici sono costituiti da sostanze (reagenti e prodotti) che partecipano a trasformazioni fisiche e chimiche della materia.
+Vengono distinti in sistemi aperti (quando si verificano scambi di materia ed
+energia con l’ambiente circostante), chiusi (scambi di sola energia) e isolati
+(nessuno scambio, né di materia né di energia).
+Energia interna
+L’energia interna di un sistema termodinamico
+L’energia interna (U) di un sistema termodinamico è data dalla somma dell’energia cinetica e potenziale delle particelle che lo compongono:
+E INTERNA (U) = E CINETICA + E POTENZIALE
+Energia cinetica
+Una molecola (ad esempio la molecola biatomica dell’azoto N2) compie tre diversi
+tipi di movimenti (traslazione, rotazione e vibrazione), per cui la sua energia cinetica (Ec) è la somma di tre diverse componenti: l’energia cinetica traslazionale,
+l’energia cinetica di rotazione e l’energia cinetica di vibrazione della molecola:
+• L’energia cinetica traslazionale è legata al moto rettilineo della molecola (considerata come massa puntiforme) che, a causa dei suoi continui urti contro le
+pareti del recipiente e contro le altre molecole, appare in realtà caotico.
+• L’energia cinetica di rotazione è legata alla rotazione della molecola intorno
+al suo centro di massa.
+• L’energia cinetica di vibrazione è dovuta alla vibrazione degli atomi che la
+compongono rispetto al centro di massa. Per effetto della vibrazione, gli atomi
+che compongono la molecola vengono a trovarsi ora più lontani, ora più vicini
+tra loro.
+Particelle monoatomiche (come quelle dei gas nobili: elio, argon, neon ecc.)
+possiedono solo energia di traslazione.
+L’energia cinetica di un sistema è la somma delle energie cinetiche delle
+molecole (particelle) costituenti il sistema ed è direttamente proporzionale
+alla temperatura assoluta del sistema stesso e viene perciò definita energia
+termica.
+L’energia termica (ovvero il valore medio
+dell’energia cinetica) di un sistema di particelle monoatomiche è:
+Ec = × k ×T
+2
+3
+(con k = 1,3806 · 10–23J/K)
+ A) In un gas ideale le particelle si scontrano tra loro e urtano le pareti del contenitore,
+mantenendo costante la loro velocità; B) tra
+un urto e l’altro le particelle si muovono a fortissima velocità in linea retta.
+A
+B
+2
+Energia potenziale
+L’energia potenziale di una molecola è determinata dalla posizione reciproca degli atomi che formano la molecola, ovvero dalle forze dei legami intramolecolari
+che uniscono gli atomi. In un sistema costituito da più molecole, la posizione delle
+stesse e degli atomi che le costituiscono è determinata anche dalle forze attrattive
+intermolecolari, per cui:
+L’energia potenziale complessiva del sistema è data dalla somma di
+tutte le energie dei legami presenti nel sistema, ossia dall’energia chimica del sistema.
+L’energia interna U di un sistema è:
+energia termica (energia cinetica) + energia chimica (energia potenziale)
+Energia interna e reazioni chimiche
+Nelle reazioni chimiche si ha sempre uno scambio tra queste due forme di
+energia (termica e chimica): la rottura dei legami delle molecole dei reagenti
+libera gli atomi che formano queste molecole e questi atomi si collegano tra
+loro in modo diverso, formando nuove molecole (i prodotti della reazione) con
+nuovi legami (nuova energia chimica potenziale).
+• Se i nuovi legami contengono complessivamente una minore quantità di
+energia potenziale (energia chimica) rispetto ai legami dei prodotti, l’energia
+potenziale in eccesso si trasforma in energia cinetica, cioè in energia termica
+(calore), che il sistema cede all’ambiente: la reazione è esotermica.
+• Se i nuovi legami contengono complessivamente una maggiore quantità di
+energia potenziale (energia chimica) rispetto ai legami dei prodotti, il sistema assorbe dall’ambiente energia termica (energia cinetica) che si trasforma
+in energia potenziale (di legame): la reazione è endotermica.

@@ -1,0 +1,44 @@
+Cosa sono i fluidi non newtoniani?
+
+I fluidi non newtoniani presentano un comportamento interessante e più complesso rispetto alle loro controparti newtoniane. A differenza di questi ultimi che mantengono una viscosità costante, indipendente da qualsiasi sollecitazione di taglio applicata, la viscosità dei fluidi non newtoniani cambia rispetto alle variazioni della velocità di taglio o della sollecitazione.
+
+I fluidi non newtoniani sfidano il principio di Newton di proporzionalità diretta tra la sollecitazione applicata e la velocità di deformazione. Invece, queste classi distintive di fluidi possono diventare più sottili o più spesse sotto una data forza, alterando le loro caratteristiche di flusso a seconda della sua intensità e durata. Una caratteristica affascinante dei fluidi non newtoniani che li distingue davvero è la loro capacità di mostrare cambiamenti comportamentali drammatici sotto diverse forze meccaniche, un attributo che si è rivelato significativo in varie applicazioni scientifiche e industriali.
+
+Il comportamento non newtoniano può materializzarsi in diversi modi. In alcuni casi, viene mostrato un comportamento non lineare rispetto all'aumento delle velocità di taglio o delle sollecitazioni, mentre altri dimostrano la capacità di "ricordare" la lavorazione meccanica precedente, mostrando il recupero strutturale nel tempo dopo ogni processo di deformazione. Questi comportamenti influenzano profondamente le proprietà reologiche del fluido portando a una miriade di usi in diversi settori.
+
+Tipi di fluidi non newtoniani: assottigliamento al taglio, ispessimento al taglio, tissotropico, reopettico, plastica Bingham
+Esistono diversi tipi di fluidi non newtoniani che mostrano comportamenti unici in condizioni diverse.
+
+In primo luogo, ci sono fluidi o pseudoplastici "che assottigliano il taglio" che diminuiscono la loro viscosità all'aumentare della velocità di taglio. In altre parole, questi tipi di fluidi diventano meno resistenti e scorrono più facilmente sotto pressione o forza elevate. Esempi comuni includono ketchup di pomodoro e panna montata.
+
+In secondo luogo, abbiamo fluidi "che ispessiscono il taglio" in cui la loro viscosità aumenta con velocità di taglio più elevate: questi liquidi diventano più densi o più viscosi se sottoposti a stress. Questo fenomeno può essere osservato in alcune miscele e sospensioni amido-acqua contenenti particelle fini.
+
+Le sostanze tissotropiche formano la terza categoria di fluidi non newtoniani; mostrano una diminuzione della viscosità nel tempo a una velocità di taglio costante. Significa che hanno bisogno di un po' di tempo per assottigliarsi quando viene applicato lo stress e impiegano una durata simile per ottenere lo spessore normale una volta rimosso lo stress. Vernici e gel in genere mostrano questo tipo di comportamento.
+
+Quarto sono i fluidi reopettici, contrariamente ai tixotropici poiché aumentano la loro viscosità nel tempo con una velocità di taglio costante. Richiedono uno sforzo maggiore per deformarsi se la forza continua per un periodo prolungato. Con il tempo, per quanto forte si scuoti, non diventerà più facile ma più difficile: non ci sono molti casi al di fuori di specifiche applicazioni industriali.
+
+Infine, ci sono plastiche Bingham come il dentifricio o la maionese che si comportano come solidi fino a quando non viene applicato un certo livello di sollecitazione di taglio: questa soglia iniziale prima che inizi a scorrere è chiamata valore di snervamento. Una volta raggiunto il punto di snervamento, si muoverà in modo molto simile a un fluido newtoniano mantenendo lo stato stazionario per tutto il tempo.
+
+Esempi di fluidi non newtoniani
+Un ottimo e popolare esempio con cui molti di noi potrebbero avere familiarità è il ketchup, un'incarnazione di un fluido che assottiglia il taglio. Questo tipo si comporta in contrasto con quanto normalmente ci aspettiamo: diventano meno viscosi quando viene applicata una forza, il che spiega l'esperienza comune di dover battere una bottiglia di ketchup per far scorrere il contenuto.
+
+L'aggiunta di amido all'acqua crea un'altra bizzarra miscela non newtoniana comunemente nota come "Oobleck". Oobleck mostra proprietà sia di assottigliamento al taglio (liquido se agitato delicatamente) che di ispessimento al taglio (solido sotto forza improvvisa), rendendolo così un fluido non newtoniano dalle sfaccettature interessanti.
+
+Sostanze come il dentifricio rientrano nella categoria delle materie plastiche Bingham che necessitano di un certo livello di stress prima che inizino a fluire. Allo stesso modo, le sostanze tixotropiche come la vernice diventano meno viscose nel tempo quando vengono disturbate o agitate.
+
+Nel frattempo, i materiali Rheopectic sono considerevolmente rari che aumentano la loro viscosità nel tempo in caso di sollecitazione di taglio prolungata; l'inchiostro della stampante e alcuni tipi di argilla offrono esempi qui.
+
+Applicazioni di fluidi non newtoniani nell'industria e nella vita quotidiana
+I fluidi non newtoniani hanno una vasta gamma di applicazioni non solo in vari settori ma anche nella vita di tutti i giorni. Le industrie che lavorano con sistemi di fluidi complessi, inclusi i settori alimentare, della cura della persona, farmaceutico e automobilistico, spesso utilizzano fluidi non newtoniani per migliorare la qualità dei loro prodotti o ottimizzare i loro processi.
+
+Nell'industria alimentare, i fluidi non newtoniani come il ketchup o la maionese svolgono un ruolo essenziale. La loro proprietà di assottigliamento aiuta a ottimizzare il processo di erogazione. La forza di taglio iniziale applicata durante la spremitura della bottiglia facilita il flusso (minore viscosità). Quando smettiamo di spremere (riduciamo lo stress applicato), questi fluidi riacquistano rapidamente la loro elevata viscosità prevenendo gocciolamenti indesiderati.
+
+L'industria cosmetica e della cura personale applica lozioni e gel che assottigliano il taglio ricchi di particelle o polimeri per garantire che rimangano stabili durante la conservazione ma facili da spalmare se applicati sulla pelle o sui capelli. Allo stesso modo, il dentifricio mostra un comportamento non newtoniano desiderabile: fuoriesce facilmente dal tubetto sotto pressione, ma mantiene la sua forma sullo spazzolino.
+
+Le industrie farmaceutiche gestiscono molti liquidi non newtoniani per la creazione di farmaci e per lo sviluppo di metodi di somministrazione di farmaci utilizzando idrogel che possono regolare la loro consistenza in condizioni diverse.
+
+Nel settore automobilistico, vengono utilizzati materiali come la vernice antivibrante per la riduzione del rumore. Questo tipo di vernice si irrigidisce (aumenta la viscosità) all'impatto riducendo così le vibrazioni e le emissioni sonore.
+
+Ulteriori esempi degni di nota sono nell'ingegneria del traffico, dove i dossi di velocità prodotti da fluidi non newtoniani si induriscono quando vengono colpiti a velocità elevate, fornendo un deterrente fisico per i veicoli a velocità eccessiva pur essendo leggeri per quelli che si muovono lentamente.
+
+Anche giocattoli come Silly Putty, che possono essere allungati lentamente come la gomma ma si spezzano se smontati rapidamente, offrono divertenti applicazioni di proprietà non newtoniane!

@@ -1,0 +1,65 @@
+Il carburatore
+
+1. SCELTA DEL DIAMETRO CARBURATORE O DIFFUSORE
+Il carburatore deve essere scelto in base alle caratteristiche del vostro motore. Se l’esigenza principale è quella di aumentare le prestazioni, la scelta del diametro del diffusore risulta fondamentale poiché influisce sulla resistenza che il sistema di aspirazione offre al flusso aspirato, in particolare:
+Maggiore è il diametro del diffusore e minore sarà la perdita di carico rispetto a quelli con un diffusore con diametro minore e con uguali caratteristiche con un conseguente aumento di potenza.
+Minore è il diametro più la velocità del flusso aumenterà migliorando l’erogazione del motore.
+
+2. MONTAGGIO E PRECAUZIONI
+Il carburatore CP Polini ha dimensioni leggermente diverse rispetto ai più comuni carburatori. Al momento dell’acquisto è quindi necessario valutare quali adattamenti sono necessari al suo corretto montaggio. I principali adattamenti sono le flange per l’attacco filtro e le curve per i collegamenti del cavo acceleratore e starter aria.
+Una volta montato il carburatore non deve assolutamente urtare o entrare in contatto con altri parti del motore o della moto (ad eccezione del collettore di aspirazione o del filtro ai quali va collegato). Il carburatore CP Polini standard è venduto con la taratura messa a punto durante i test effettuati sulle più famose moto e scooter standard o equipaggiati con kit maggiorati ma i cui motori non superano i 12000 giri/minuto. Per le diverse tarature consultare la sezione dedicata.
+Se il vostro motore supera i 12000 giri/minuto ed è equipaggiato con prodotti da COMPETIZIONE vi consigliamo di leggere attentamente il paragrafo 11 “COMPETIZIONE”.
+
+3. ALIMENTAZIONE
+Il carburatore CP Polini è del tipo a spillo.
+Il carburante immesso dal serbatoio nella vaschetta è mantenuto ad un livello praticamente costante grazie al meccanismo spillo galleggiate. Il livello di carburante nella vaschetta che arriva ai getti durante il funzionamento rimane costante e di conseguenza lo è anche il dislivello che il carburante deve superare per arrivare nello spruzzatore.
+Il livello del carburante presente nella vaschetta è un elemento di taratura del carburatore perché con esso varia, di pari passo, il segnale sull’ugello di aspirazione del carburante e di conseguenza il rapporto di miscela.
+La regolazione del livello nella vaschetta dipende dal braccio di leva del galleggiante/spillo e al peso del galleggiante stesso:
+
+Il braccio leva galleggiante spillo non è tarabile nel carburatore CP POLINI. Viene tarato in sede di montaggio e può solo essere controllato. (Vedere foto 1 per controllo misura del galleggiante). Montando un galleggiante più pesante si avrà come risultato una miscela erogata più ricca; al contrario, con un galleggiante più leggero, si smagrirà la carburazione. I galleggianti sono classificati in base al loro peso e devono essere posizionati all’interno della vaschetta secondo precise disposizioni per ottenere il funzionamento ottimale. Assicurarsi che, nel caso si usino carburanti particolari, la gomma sintetica posta all’estremità dello spillo sia compatibile con il carburante utilizzato. Un altro elemento importante durante i test per la taratura del carburatore è il diametro della sede spillo perché determina la quantità e la velocità di ingresso del combustibile nella vaschetta, in particolare:
+• Con un diametro troppo basso si rischia di ottenere una carburazione troppo povera perché si rischia che la vaschetta si svuoti più velocemente di quanto lo spillo riesca a far passare benzina, con il serio rischio di danneggiare il motore.
+• Il diametro della sede spillo del carburatore CP POLINI è già stato studiato per evitare questo problema in quanto il diametro foro è sovradimensionato.
+
+4. LA VALVOLA DEL GAS
+È un elemento di regolazione che determina l’area effettivamente disponibile per il passaggio del flusso.
+È una valvola di forma cilindrica che scorre trasversalmente al diffusore in una sede apposita ricavata nel carburatore.
+Per eliminare fenomeni di usura o di “incollaggio” della valvola del gas, la stessa e gli elementi che la circondano vengono sottoposti a trattamenti di indurimento del materiale.
+
+5. CIRCUITO DEL MINIMO
+Il principio di funzionamento di tutti i carburatori si rifà ad un principio fisico preciso: è la risposta del sistema ad una depressione generata dall’azione aspirante del motore. Quando la valvola del gas è chiusa, o quasi, la depressione che insiste sullo spruzzatore principale non è sufficiente a richiamare carburante dalla vaschetta. E’ per questo che il carburatore ha un secondo circuito di erogazione che entra in funzione con questo tipo di condizioni (di MINIMO) in modo da garantire il funzionamento del motore che altrimenti si spegnerebbe. La caratteristica del circuito del minimo è quella di avere il foro di erogazione in un punto che, con la valvola del gas chiusa, è di forte depressione e quindi in condizioni ottimali per erogare carburante dalla vaschetta. E’ fornito di un proprio getto (del MINIMO) la cui scelta è molto importante non solo per poter lavorare in condizioni di minimo ma anche per ottenere la migliore risposta del motore durante la prima apertura della valvola del gas, che successivamente andrà a caratterizzare la successiva progressione. Se si installa un getto troppo grande il motore faticherà a restare acceso ed avrà un accelerazione lenta. Se il getto del minimo è troppo piccolo risponderà meglio all’accelerazione ma quando si chiude il gas il motore resterà accelerato per qualche secondo per poi stabilizzarsi al minimo.
+
+6. L’EMULSIONE CON L’ARIA
+Il circuito del minimo eroga carburante che preventivamente deve essere miscelato con una piccola quantità d’aria.
+La quantità d’aria è minima quando è in funzione il circuito del minimo ma diventa una quantità importante per il circuito di progressione quando la valvola del gas si solleva. La messa a punto della regolazione del minimo si ottiene intervenendo sulla vite dell’aria.
+Per ottenere un arricchimento bisogna avvitare la vite dell’aria (cioè chiudere l’afflusso di aria); al contrario per smagrire bisogna svitare.
+Il miglior settaggio si ottiene con la vite aria aperta 1-1.5 giro da tutto chiuso.
+
+7. SPILLO CONICO
+Il carburatore CP Polini è del “tipo spillo” perché con l’utilizzo dello spillo conico si ottiene una configurazione meccanica che assicura il corretto rapporto di miscela per la maggior parte delle condizioni di funzionamento del motore. Questo spillo è collocato in una sezione del polverizzatore e lavora in questo modo:
+Quando la valvola del gas è poco sollevata lo spillo riduce lo spazio per il passaggio del carburante quindi aumenta la depressione ma l’erogazione rimane bassa e quindi il rapporto di miscela resta corretto.
+Quando si ha una grande apertura del gas lo spillo viene a trovarsi nel polverizzatore aumentando lo spazio di erogazione del carburante; quindi, pur diminuendo la depressione, il rapporto di miscela rimane ottimale grazie all’aumento dell’area di passaggio del carburante. Il motore è in grado di funzionare con tutte le aperture di gas.Lo spillo è fissato alla valvola del gas con un fermaglio elastico che si lega a una delle tacche sull’estremità dell’astina. La messa a punto del sistema dello spillo può avvenire agendo sullo spillo stesso. In particolare, se la necessità è quella di smagrire la miscela si dovrà abbassare lo spillo (spostando il fermaglio più in alto) mentre se si ha una carburazione troppo ricca si dovrà alzare lo spillo (spostando il fermaglio più in basso). Anche il grado di conicità e la lunghezza del tratto conico dello spillo sono parametri importanti per la messa a punto della carburazione perché influiscono direttamente sulla risposta globale del motore. Quando non è possibile regolare correttamente il carburatore agendo su questi parametri bisognerà sostituire lo spillo con un altro dalle caratteristiche differenti.
+
+8. L’ACCOPPIAMENTO SPILLO- BUSSOLA POLVERIZZATORE
+Accertato che la messa a punto può avvenire agendo sui getti e/o modificando la posizione ed eventualmente il tipo di spillo conico si deve tener conto che si può agire anche sulla bussola polverizzatore.
+Il polverizzatore è infatti dotato, nel suo ultimo tratto in prossimità del diffusore, di una bussola di diametro calibrato che è disponibile in diverse misure.
+Aumentando il diametro del polverizzatore si va ad arricchire la miscela.
+
+9. IL POLVERIZZATORE E IL FRENO ARIA
+Il polverizzatore è un semplice tubo che mette in comunicazione il getto del massimo con il diffusore e viene chiamato “tipo due tempi” quando non ha fori. Quando invece è dotato di una serie di fori disposti su tutta la sua lunghezza viene detto “tipo quattro tempi”.(Attenzione: chiamare i polverizzatori 2 o 4 tempi è popolare ma tecnicamente errato perché si possono tranquillamente usare polverizzatori con fori anche per il 2 tempi. Ad esempio le minimoto hanno polverizzatori con fori “tipo 4 tempi”) Il funzionamento è semplice: per effetto della depressione che si crea nel diffusore, dal tubo del polverizzatore viene richiamato il combustibile calibrato dal getto del massimo e dallo spillo conico, mentre dal canale arriva una certa quantità di aria. Aria e combustibile si miscelano formando uno spray polverizzato che viene aspirato dal motore. Ad intervenire su questo processo, oltre al foro del polverizzatore, sono il diametro del canale dell’aria, l’altezza della parte del polverizzatore che sporge nella camera e l’altezza del gradino di cui è dotato l’ugello erogatore. Il polverizzatore “tipo quattro tempi” consente di ottenere miscele più magre e più controllate; infatti, essendo dotato di fori per tutta la sua lunghezza, l’emulsione tra aria e combustibile si compie all’interno del tubetto prima che la miscela arrivi all’ugello nel diffusore. Ovviamente la disposizione dei fori e il loro diametro influenzano l’erogazione. Fori ricavati nella parte bassa del tubetto risultano immersi nel carburante della vaschetta e quindi aumentando il loro numero si aumento l’afflusso di carburante che va ad emulsionarsi con l’aria. I fori nella parte alta del tubetto sono invece esposti all’aria e privilegiandoli si ottiene lo smagrimento del gas a bassi regimi. Il carburatore CP POLINI si può tarare in modo che funzioni nei 2 modi, 2 o 4 Tempi, cambiando il getto freno aria.
+Getto freno aria chiuso: polverizzatore tipo 2 tempi funzionante come un polverizzatore senza fori
+Getto freno aria aperto: i fori del polverizzatore funzionano e smagriscono il motore
+
+10. IL GETTO MASSIMO
+È un elemento fondamentale per la regolazione della carburazione perché serve a calibrare il combustibile erogato dal sistema del massimo. La scelta del getto deve avvenire sperimentalmente ed è bene partire con un getto molto grande per evitare di danneggiare il motore con una carburazione troppo povera che porterebbe ad un grippaggio o foratura del pistone. Procedere per tentativi: dopo aver percorso un rettilineo a pieno gas ai massimi regimi bisogna controllare l’aspetto della candela (vedi tabella colore candela). Quando si è giunti alla scelta del getto adeguato conviene aumentare la misura di qualche punto per precauzione nei confronti di uno smagrimento causato da abbassamento di temperatura o aumento della pressione ambientale.
+INDICAZIONI COLORE CANDELA
+NORMALE: Marrone scuro a marroncino con elettrodo asciutto
+SURRISCALDATA: Grigio chiaro o bianco ⇒ MISCELA POVERA
+BAGNATA: Bagnata e fuligginosa ⇒ MISCELA RICCA
+
+11. COMPETIZIONE
+Nel caso in cui il carburatore venga montato su motori da competizione che superano i 12000 giri/ minuto , leggere attentamente le seguenti indicazioni. Il carburatore CP Polini è più leggero rispetto ad altri carburatori in commercio e in determinate condizioni potrebbe causare problemi di emulsione benzina. Bolle d’aria vengono aspirate nel getto massimo dando serissimi problemi al motore che diventa povero pur avendo magari un getto grande o giusto; il motore incomincia a detonare fino alla rottura.
+Innanzitutto controllate le indicazioni di montaggio nella sezione “Tarature” per accertarsi che il carburatore CP Polini sia stato testato sul modello della vostra moto o scooter dai tecnici Polini e seguire le indicazioni.
+Se nella sezione “Tarature” il vostro modello di moto o scooter non è elencato procedere come segue:
+
+Montare la vaschetta trasparente (cod.343.0029) che vi permetterà di rilevare il problema e se necessario ammorbidire il collettore in gomma fino a quando il problema sparisce.
+Se il problema non si risolve, aumentare la massa del carburatore montando le flange di innesto filtro in ferro (cod.343.0028) prodotte da POLINI. Una volta risolto il problema rimontare la vaschetta standard.

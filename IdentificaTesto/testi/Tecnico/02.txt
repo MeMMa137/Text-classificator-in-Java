@@ -1,0 +1,80 @@
+Cos'è la scheda video e come funziona
+
+La scheda video è uno dei componenti hardware più importanti in un computer. È determinante nella gestione della grafica 3D e molto altro ancora.
+La scheda video, detta anche scheda grafica, è una delle componenti hardware fondamentali di ogni computer, sia fisso sia laptop. È responsabile dell'accelerazione grafica 3D e, grazie ai driver video, permette di trasformare i segnali elettrici inviati dal processore in segnali video poi visualizzati dalla periferica di output (ovvero lo schermo). Rispetto al passato, però, oggi le schede video sono in grado di "pensare" da sé, generando autonomamente animazioni grafiche tridimensionali e bidimensionali, sgravando così il processore di tutti i complessi calcoli necessari per la gestione della grafica.
+
+Alcune CPU di ultima generazione presentano acceleratori grafici integrati nello stesso chip (come ad esempio i processori utilizzati per smartphone e tablet), negli altri casi le schede video si collegano alla scheda madre del computer tramite connettori ad hoc, i quali si dividono sostanzialmente in due tipologie: gli slot AGP e PCI Express.
+
+Le componenti di una scheda video
+All'interno di una scheda video, che somiglia sempre più ad un computer in miniatura, troviamo diversi componenti elettronici che ne determinano prestazioni nell'elaborazione grafica ed in generale nella potenza di calcolo.
+
+GPU
+L'equivalente della CPU in un computer vero e proprio. Il processore grafico (graphic processing unit, GPU) è un circuito elettronico realizzato appositamente per monitorare e manipolare il funzionamento della memoria grafica (che vedremo tra poco) e accelerare la costruzione delle immagini da visualizzare tramite lo schermo.
+
+BIOS video
+Ogni scheda grafica è dotata di una piccola memoria ROM (read only memory, memoria di sola lettura) dove è installato un driver molto semplice (chiamato firmware) e viene utilizzata solamente all'avvio del computer (la cosiddetta fase di bootstrap). Nelle prime fasi dopo l'accensione del dispositivo, la GPU della scheda video legge e esegue le informazioni presenti in questa porzione di memoria, così da poter iniziare a elaborare le immagini da inviare alla periferica d'output video.
+
+Memoria video
+
+Esattamente come un vero e proprio computer, anche la scheda video ha la sua memoria di lavoro che "media" tra le informazioni in arrivo dalle altre componenti hardware e quelle in uscita verso lo schermo. Solitamente una scheda grafica ha tra i 512 megabyte e gli 8 gigabyte di memoria RAM (random access memory, memoria ad accesso casuale). Dato che la GPU e gli altri elementi della scheda video devono accedere contemporaneamente alla RAM, vengono impiegate memorie molto veloci o a porta multipla come la VRAM (Video RAM), WRAM (Windows RAM, RAM a finestre) e SGRAM (Synchronous Graphic RAM, RAM grafica sincrona).
+
+RAMDAC
+Acronimo di Random Access Memory Digital-to-Analog Converter (Memoria ad accesso casuale per convertitore digitale-analogico) è una componente che sta lentamente cadendo in disuso. Il RAMDAC era necessario per convertire in formato analogico i dati in uscita in formato digitale dalla GPU e renderli "digeribili" dai vecchi schermi a tubo catodico. Con la progressiva scomparsa dei tubi catodici a favore di schermi LCD e LED, questo componente sta diventando a sua volta obsoleto.
+
+Come funziona la scheda video
+Il funzionamento di una scheda video è molto semplice. La RAM video, esattamente come la RAM utilizzata dal computer, è divisa in tante locazioni o celle (una locazione è un piccolissimo circuito elettrico composto da un condensatore e un transistor dove vengono fisicamente conservati i dati: il condensatore memorizza i dati; il transistor agisce come regolatore, permettendo la lettura o la modifica del dato). Nel caso della RAM video, ogni locazione contiene le specifiche per visualizzare il colore di un pixel dello schermo: maggiore, quindi, la quantità di RAM della scheda video, maggiore i pixel e i colori visualizzabili nello stesso momento dalla scheda grafica. Il chip grafico (la GPU) si limita a leggere in sequenza le locazioni sulla RAM, a registrarne le modifiche e trasformarle nel segnale digitale che sarà visualizzato dal monitor.
+
+Uscite video
+ 
+
+Gli slot di collegamento della scheda video
+
+ 
+
+A seconda della tipologia di scheda video, questa potrebbe avere una o più uscite video grazie alla quale collegare il computer ad un monitor, ad un televisore o anche ad un proiettore. Qui di seguito alcune tra le più note.
+
+Video Graphic Array (VGA)
+ 
+
+Uscita VGA
+
+ 
+
+Fastweb Casa Light
+22,95€/mese
+Fibra ultraveloce
+Modem e attivazione inclusi
+Offerta valida per i clienti Mobile Full
+SCOPRI
+L'uscita VGA è uno standard analogico creato a inizio anni '80 e utilizzato soprattutto per collegare il computer con monitor a tubo catodico e altre periferiche video analogiche. Oggi, invece, è utilizzata soprattutto per video ad alta e altissima risoluzione (da 1080p in su). A queste risoluzioni, però, l'utente potrebbe riscontrare degradazione nella qualità dell'immagine dipendente dalla lunghezza del cavo.
+
+Digital Visual Interface (DVI)
+ 
+
+Uscita DVI
+
+ 
+
+L'uscita DVI è uno standard piuttosto recente e venne realizzato con la crescente diffusione di monitor digitali, quali gli schermi LCD, LED, ecc. Permette di aggirare alcuni dei problemi più noti dell'uscita VGA (come la distorsione dell'immagine) facendo corrispondere ad ogni pixel della scheda grafica un pixel sullo schermo.
+
+High Definition Multimedia Interface (HDMI)
+ 
+
+Uscita HDMI
+
+ 
+
+È lo standard più recente e permette di trasferire il segnale audio e video non compresso a dispositivi compatibili con questo standard (televisori HD e UltraHD). Lo HDMI è lo standard che ha sostituito i vecchi standard analogici come il VGA ed oramai è presente in qualsiasi schermo. 
+
+Come scegliere la scheda video
+Il mercato delle schede grafiche è sostanzialmente dominato dal duopolio NVIDIA – ATI (così come il mercato dei processori è nelle mani del duopolio Intel – AMD). Dopo anni di guerra feroce, combattuta a colpi di nuovi modelli e nuovi standard sfornati quasi ogni trimestre, i due produttori hanno raggiunto una sorta di armistizio per il quale presentano nuovi modelli una volta l'anno.
+
+In soldoni, NVIDIA e ATI tentano di miniaturizzare i circuiti elettrici che compongono il microchip della GPU. Il perché è presto detto: più circuiti elettrici sono presenti all'interno del processore, maggiore il numero di operazioni grafiche che questo potrà realizzare nell'unità di tempo e maggiore, quindi, la sua potenza di calcolo. Tutti gli gli sforzi tecnologici dei due competitor sono quindi concentrati sullo sviluppo di processi produttivi sempre più efficienti e piccoli. Le schede video di ultima generazione sono realizzate con processi a 7 nanometri (un nanometro è un miliardesimo di metro).
+
+Quando si sceglie una scheda video, quindi, si dovrà prima di tutto guardare la frequenza del processore grafico, poiché è questo valore a determinare il numero di operazioni grafiche (l'equivalente dei cicli di lavoro della CPU) che compie nell'unità di tempo.
+
+In secondo luogo si dovrà tenere conto della quantità di RAM di cui la scheda video dispone. Sarà questa a determinare la risoluzione massima visualizzabile e la profondità dei colori (ovvero il numero di colori che sarà possibile mostrare a video).
+
+Un altro importante fattore è rappresentato dall'interfaccia di memoria (o bus), che rappresenta la quantità massima di dati che la GPU può processare ad ogni ciclo di lavoro. Si tratta, in pratica, della quantità di dati in memoria su cui è possibile lavorare nel medesimo istante.
+
+A parità di "generazione tecnologica", le differenze tra le schede video dell'uno e dell'altro produttore sono in genere minime se non inesistenti. Il discrimine, quindi, il più delle volte è soltanto il prezzo.

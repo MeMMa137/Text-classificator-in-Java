@@ -1,0 +1,24 @@
+Impianti fotovoltaici: come funzionano?
+
+Da anni ormai siamo abituati a vedere installati i pannelli fotovoltaici sui tetti delle case, degli edifici, sulle tettoie di parcheggi, o anche a terra, per produrre elettricità pulita a partire proprio dalla luce solare. Soprattutto in un periodo di crisi energetica, utilizzare i pannelli fotovoltaici ci permette di ridurre le emissioni di CO2 e di dipendere sempre meno dai combustibili fossili, tagliando anche i costi. Ognuno di noi, installando questi moduli, può infatti diventare un produttore attivo di energia e dare una mano a raggiungere obiettivi sempre più ambiziosi. Ma quanti sanno davvero come funziona questa tecnologia?
+
+ 
+
+Come sono fatti i pannelli fotovoltaici
+Un pannello fotovoltaico è composto da unità dette celle, di solito fatte di un materiale semiconduttore come il silicio con l’aggiunta di atomi di altri elementi come boro e fosforo. Le celle sono poi posizionate una accanto all’altra su una superficie piana e collegate tra loro. Per proteggere questo sistema si monta uno speciale vetro di copertura, appositamente trattato per ottenere la massima resa di energia. I pannelli sfruttano l’irraggiamento del sole e non il calore dell’aria: per questo motivo non c’è bisogno di un clima particolarmente caldo, anzi l’efficienza è al massimo se la temperatura delle celle resta al di sotto dei 25°C. Normalmente un pannello solare ha una vita piuttosto lunga, circa 25 o 30 anni.
+
+La conversione dei raggi solari in energia elettrica avviene all’interno delle celle fotovoltaiche: i fotoni della luce solare che colpiscono il silicio- a cui sono stati aggiunti gli altri elementi - fanno liberare degli elettroni, producendo così una corrente elettrica continua. Dato che nelle case viene utilizzata la corrente alternata, bisogna installare un dispositivo chiamato inverter, che trasforma appunto la corrente da continua ad alternata.
+
+ 
+
+Alla ricerca della migliore efficienza
+Oggi si producono pannelli fotovoltaici molto più leggeri rispetto ai modelli di una decina d’anni fa, diminuendo quindi il peso sui tetti o sul terreno. La massa dei pannelli è calata fino a 11 kg al metro quadro, e questi pannelli dimagriti sono anche più facili da trasportare e da installare. Insieme al peso, si riduce anche l’impatto ambientale: per esempio 3Sun Gigafactory, una vera e propria “fabbrica del sole” nata in Sicilia nel 2010, produce milioni di pannelli fotovoltaici ogni anno e sviluppa anche tecniche e tecnologie per il riutilizzo e il riciclo di materiali di cui sono fatti.
+
+Il cambiamento climatico rappresenta un’insidia anche per i pannelli solari, perché rischia di peggiorare la loro efficienza a causa del surriscaldamento. Per questo, sono stati studiati e sviluppati dei particolari dispositivi che distribuiscono in modo più efficiente il calore accumulato, per ottenere un minore surriscaldamento e quindi meno dispersione di energia. Per aumentare al massimo l’efficienza sono importanti anche il grado di inclinazione e l’orientamento dei pannelli, da regolare per avere i raggi del sole quanto più perpendicolari ai moduli per più tempo possibile durante l’arco della giornata e in tutto l’anno.
+
+ 
+
+Non tutti i pannelli producono la stessa energia
+Quando si deve decidere quali pannelli fotovoltaici installare conviene fare attenzione ad alcuni dettagli importanti. Anzitutto, scegliere la giusta collocazione per catturare la massima quantità di luce solare. Non è così facile: anche gli ombreggiamenti degli altri edifici e delle piante circostanti possono fare la differenza, perché incidono sull’efficienza dell’impianto. Come soluzione ad alta tecnologia, è possibile anche installare dei dispositivi (si chiamano tracker) che modificano l’orientamento dei pannelli, “inseguendo il sole” durante tutte le ore del giorno, un po’ come fanno i girasoli. L’impianto in questo caso è più costoso, ma genera anche più energia.
+
+Infine, c’è una questione geografica. Le aree più irradiate dal sole permettono una produzione maggiore di energia elettrica, ed inoltre in base alla latitudine cambia l’angolo di incidenza dei raggi solari. Quindi non tutte le aree del Pianeta possono produrre la stessa energia dal Sole: anche solo spostarsi di 500 o di 1.000 chilometri verso l’Equatore permette di produrre in media fino al 50% di energia in più, e viceversa. Ma non c’è solo questo: allo stesso tempo, infatti, l’efficienza di un impianto fotovoltaico è influenzata anche dalle condizioni atmosferiche: nebbia, nuvolosità e foschia, per esempio, riducono la quantità di luce che arriva ai pannelli. 

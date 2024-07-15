@@ -1,0 +1,311 @@
+Il sistema operativo
+
+9.0 Come caricare il sistema operativo
+Il caricamento di un sistema operativo avviene perché, all'atto dell'accensione di un computer, il firmware (il BIOS dei PC) si occupa di leggere ed eseguire un piccolo programma residente all'inizio del disco fisso o di un dischetto. Nei PC questa parte iniziale del disco fisso è l'MBR o Master Boot Record ed è costituita da un singolo settore. Quando si fa riferimento a un dischetto, si parla di settore di avvio o di boot.
+
+Questo piccolo programma iniziale, si occupa a sua volta, di avviare il kernel.
+
+Nei sistemi con architettura i386, esistono almeno tre modi per effettuare il caricamento di Linux: un dischetto di avvio, LILO e Loadlin.
+
+9.1 Kernel in un dischetto
+Dal punto di vista tecnico, il modo più semplice di avviare Linux è quello di creare un disco di avvio contenente solo il kernel. Nell'esempio seguente si copia il kernel vmlinuz nel dischetto contenuto della prima unità.
+
+# cp vmlinuz /dev/fd0
+
+<!>   La copia fatta in questo modo non è la copia di un file in un dischetto che contiene un filesystem: il dischetto diventa il file stesso, e questo tipo di dischetto non può contenere più di un file. Questo particolare è molto importante e deve essere necessariamente compreso.
+
+Il kernel è così in grado di avviarsi da solo, ma può non essere stato predisposto per utilizzare esattamente il filesystem root desiderato, così come altri elementi predefiniti potrebbero non corrispondere alla realtà particolare.
+
+Si utilizza il programma rdev per alterare questi elementi direttamente nel file del kernel o nell'immagine copiata nel dischetto.
+
+# rdev
+rdev [<opzioni>] [<immagine> [<altre-opzioni>]]
+
+Legge o imposta i parametri di un'immagine di un kernel. L'immagine in questione può essere indicata come un nome di file, o un nome di dispositivo (tipicamente /dev/fd0).
+
+Scomposizione della sintassi in base ad alcune opzioni
+rdev <immagine>
+
+Visualizza il nome di dispositivo corrispondente al filesystem root (quello principale) attualmente indicato nell'immagine. Si tratta di visualizzare il nome della partizione che diventerà il root del filesystem.
+
+rdev <immagine> <dispositivo>
+
+Specifica un nuovo nome di dispositivo da utilizzare come root per il filesystem.
+
+rdev -R <immagine> 1
+
+Indica di attivare inizialmente il dispositivo del filesystem root in sola lettura.
+
+rdev -R <immagine> 0
+
+Indica di attivare inizialmente il dispositivo del filesystem root in lettura e scrittura.
+
+rdev -s <immagine> <dispositivo>
+
+Indica di utilizzare il dispositivo indicato come area di swap.
+
+Esempi
+# rdev /dev/fd0 /dev/hdb1
+
+Configura l'immagine contenuta nel dischetto inserito nella prima unità, definendo che la partizione da utilizzare come filesystem principale (cioè root) è la prima del secondo disco fisso.
+
+# rdev -R /dev/fd0 1
+
+Definisce che al momento del boot la partizione di root sia attivata in sola lettura in modo che il filesystem possa essere controllato.
+
+9.2 LILO
+LILO è la procedura standard per il caricamento di Linux nei PC. Permette di avviare anche altri sistemi operativi eventualmente residenti nello stesso computer in cui si usa Linux. In questa sezione si vedono solo alcuni aspetti del suo funzionamento, quelli che dovrebbero bastare nella maggior parte delle situazioni. Per un approfondimento sul suo funzionamento, conviene consultare la documentazione che accompagna questa procedura: lilo(8), quanto contenuto nella directory /usr/doc/lilo*/ e BootPrompt HOWTO.
+
+Organizzazione essenziale
+La procedura LILO è composta essenzialmente da:
+
+la directory /boot/ e dal suo contenuto;
+il programma /sbin/lilo;
+il file di configurazione /etc/lilo.conf.
+La directory /boot/ contiene i file utilizzati per effettuare l'avvio del sistema: sia per avviare Linux che gli altri eventuali sistemi operativi. Può contenere anche il/i file del kernel, quando per questo non si usa semplicemente la directory radice. Più precisamente, contiene almeno i file seguenti:
+
+boot.b;
+map che viene creato da /sbin/lilo;
+boot.n dove l'estensione è un numero esadecimale, che viene creato da /sbin/lilo, e contiene il settore di avvio dell'unità rappresentata dal numero stesso (non si tratta necessariamente di un solo file);
+il kernel se non risiede già nella directory radice.
+1024 cilindri
+Quando si utilizza l'architettura PC, il firmware, cioè il BIOS, solitamente non è in grado di accedere a settori oltre il 1024-esimo cilindro (cioè oltre il cilindro numero 1023). Di conseguenza, il programma che si occupa di caricare il kernel di qualunque sistema operativo, si deve avvalere delle funzioni del BIOS (perché non c'è ancora un sistema operativo funzionante) e quindi non può raggiungere file oltre quel limite dei 1024 cilindri.
+
+La directory /boot/ con tutto il suo contenuto, e il kernel devono trovarsi fisicamente entro il 1024-esimo cilindro. Non basta che la partizione inizi prima di quel limite per garantire che questi file si trovino effettivamente in quella zona. In caso di necessità, si può utilizzare una partizione apposita per questi file, nella parte sicura del disco. È poi sufficiente montare questa partizione nel filesystem generale, eventualmente riproducendo la directory /boot/ attraverso un semplice link simbolico.
+
+Dispositivi in esadecimale
+Nella tabella (seguente) sono elencati i codici esadecimali di alcuni dispositivi per le unità di memorizzazione.
+
+
+Dispositivo	Codice
+/dev/fd0	200
+/dev/fd1	201
+/dev/hda	300
+/dev/hda1	301
+/dev/hda2	302
+/dev/hdb	340
+/dev/hdb1	341
+/dev/hdb2	342
+/dev/sda	800
+/dev/sda1	801
+/dev/sda2	802
+/dev/sdb	800
+/dev/sdb1	801
+/dev/sdb2	802
+Elenco dei codici esadecimali dei dispositivi di alcune unità di memorizzazione.
+Installazione del sistema di boot
+L'installazione del sistema di caricamento avviene modificando il contenuto di uno di questi settori:
+
+MBR o Master Boot Record;
+il primo settore di una partizione;
+il primo settore di un dischetto.
+Nel primo caso, LILO ha il controllo su tutti i sistemi operativi per il loro caricamento; nel secondo, LILO dipende da un sistema di avviamento di un altro sistema operativo che, a sua volta, passa a LILO il controllo quando ciò viene richiesto; nel terzo caso si utilizza un dischetto in modo da non alterare il sistema di avvio già presente.
+
+L'installazione avviene per mezzo del programma /sbin/lilo che a sua volta si basa sulla configurazione stabilita attraverso /etc/lilo.conf. Ogni volta che si cambia qualcosa all'interno della directory /boot/, o si modifica, o si sposta il file del kernel, è necessario ripetere l'installazione attraverso /sbin/lilo.
+
+/etc/lilo.conf
+/etc/lilo.conf è il file di configurazione utilizzato da /sbin/lilo per installare il sistema di avvio. Si tratta di una sorta di script contenente solo assegnazioni a variabili. Ne viene descritto il funzionamento in modo sommario, partendo da un esempio in cui si ha un solo disco fisso, dove la prima partizione è riservata al Dos, e la seconda a Linux. L'esempio permette di avviare Linux e il Dos selezionando la parola ``linux'' o ``dos'' al momento dell'avvio. Il simbolo # rappresenta l'inizio di un commento e viene ignorato.
+
+# Prima parte generale
+boot=/dev/hda
+prompt
+timeout=50
+
+# Caricamento di Linux
+image=/boot/vmlinuz
+    label=linux
+    root=/dev/hda2
+    read-only
+
+# Caricamento del Dos
+other=/dev/hda1
+    label=dos
+    table=/dev/hda
+boot=/dev/hda
+Nella prima parte viene specificato che il settore di boot deve essere collocato nel primo disco IDE, di conseguenza nel MBR. Se fosse stata indicata una partizione specifica, si sarebbe trattato del primo settore di quella partizione (per esempio: boot=/dev/hda2). Volendo si poteva indicare anche una unità per i dischetti, in modo da installare tale settore di avvio in quel dischetto (per esempio: boot=/dev/fd0).
+
+prompt
+Si tratta di un flag, la cui presenza fa sì che all'atto del caricamento venga richiesto di inserire il nome del sistema che si desidera avviare.
+
+timeout=50
+Dopo 50 decimi di secondo (5 secondi), senza che sia stato selezionato alcunché, viene avviato il sistema predefinito (in questo caso ``linux'').
+
+image=/boot/vmlinuz
+Inizia la definizione di un kernel da avviare: /boot/vmlinuz.
+
+<!>   Si tratta del file che si trova nel filesystem in funzione nel momento in cui si avvia /sbin/lilo. Questo particolare potrebbe sembrare ovvio, ma non è proprio così. Se si vuole preparare un sistema di avvio per un Linux residente in un'altra partizione (magari un dischetto), si vuole forse fare riferimento a un kernel che si trova lì. Questo non è possibile, a meno di non attuare qualche trucchetto.
+
+label=linux
+Definisce il nome utilizzato per fare riferimento a questo kernel. Poteva essere qualunque cosa, in questo caso, ``linux'' è utile per ricordare che si tratta dell'avvio di quel sistema operativo.
+
+root=/dev/hda2
+Indica la partizione da utilizzare come filesystem principale (root).
+
+read-only
+La presenza di questo flag fa sì che la partizione specificata venga inizialmente connessa (montata) in sola lettura, in modo da permettere al kernel di eseguire un controllo prima di avviare il resto del sistema. Al termine del controllo, la partizione viene collegata regolarmente in lettura e scrittura.
+
+other=/dev/hda1
+Inizia la definizione dell'avvio di un altro sistema operativo, per il quale non è LILO a prendersi cura dell'avvio del kernel, ma un altro settore di avvio. In questo caso il settore di avvio deve trovarsi all'inizio della partizione /dev/hda1.
+
+label=dos
+Definisce il nome utilizzato per fare riferimento a questo sistema operativo. La parola ``dos'' è utile per ricordare che si tratta dell'avvio di quel sistema operativo.
+
+table=/dev/hda
+Specifica il dispositivo che si riferisce all'unità che contiene l'indicazione della tavola delle partizioni. In effetti, questa è contenuta nella parte iniziale del disco fisso, quindi si fa riferimento all'intera unità /dev/hda.
+
+Volendo, è possibile avviare lo stesso filesystem con kernel differenti a seconda delle necessità. in tal caso si possono aggiungere al file /etc/lilo.conf altri blocchetti come il seguente.
+
+# Caricamento di Linux con un kernel sperimentale
+image=/boot/vmlinuz-2.1.40
+    label=prova
+    root=/dev/hda2
+    read-only
+Se si vuole fare in modo che il sistema di avvio utilizzi il contenuto della directory /boot/, e un kernel, residenti in una partizione diversa da quella attiva nel momento in cui si avvia /sbin/lilo, è necessario creare almeno un link simbolico in modo da fingere di avere /boot/ e il kernel dove dovrebbero essere.
+
+Alle volte è necessario informare il kernel di qualche particolarità dell'hardware installato. In tal caso si utilizza la variabile append alla quale si assegna la stringa necessaria. Nell'esempio seguente si invia la stringa cdu31a=0x340,0 necessaria per poter attivare un vecchio lettore CD-ROM Sony.
+
+# Caricamento di Linux con l'attivazione del CD-ROM
+image=/boot/vmlinuz
+    label=sony
+    root=/dev/hda2
+    append="cdu31a=0x340,0"
+    read-only
+# lilo
+lilo [<opzioni>]
+
+lilo, (/sbin/lilo) permette di installare il sistema di avvio basato sulla procedura LILO. Si basa su quanto contenuto nel file /etc/lilo.conf o in quello indicato attraverso l'opzione -C <file>.
+
+LILO su un dischetto
+Se all'interno del file /etc/lilo.conf si utilizza l'indicazione boot=/dev/fd0, si ottiene solo di mettere un settore di avvio nel dischetto. Non si afferma implicitamente che il kernel deve trovarsi lì.
+
+Per poter avviare il sistema da un dischetto contenente anche la directory /boot/ e il kernel, bisogna agire in maniera diversa.
+
+Per comprendere il meccanismo, conviene analizzare un esempio. Si vuole ottenere un dischetto di avvio che permetta di ottenere le stesse scelte dell'esempio riportato nella sezione lilo.conf. Per risolvere il problema si può procedere come segue.
+
+All'interno di un dischetto inizializzato e contenente un filesystem ext2 si crea la directory /boot/ in cui si copia il contenuto della stessa directory appartenente al filesystem generale, insieme al kernel. Si suppone di aver montato il dischetto utilizzando la directory /mnt/floppy/ come mount point. # fdformat /dev/fd0H1440 # mke2fs /dev/fd0 # mount -t ext2 /dev/fd0 /mnt/floppy # cp -dpR /boot /mnt/floppy
+Si modifica temporaneamente il nome della directory /boot/. # mv /boot /boot.orig
+Si crea un link simbolico alla stessa directory del dischetto. # ln -s /mnt/floppy/boot /boot
+Il file /etc/lilo.conf viene modificato in modo da fare riferimento al dispositivo /dev/fd0.
+boot=/dev/fd0
+Si avvia il programma /sbin/lilo. # lilo
+Il dischetto dovrebbe essere sistemato, ma prima di proseguire occorre ripristinare il sistema di avvio normale, altrimenti si potrà avviare il computer solo attraverso il dischetto. # rm /boot # mv /boot.orig /boot Si ripristina il file /etc/lilo.conf in modo da indicare il che l'avvio viene eseguito dal disco fisso e non più dal dischetto, quindi si esegue nuovamente /sbin/lilo. # lilo
+Boot prompt
+Subito dopo la prima fase dell'avvio del sistema, quella gestita da LILO, prima dell'avvio vero e proprio del kernel, se si verifica una delle condizioni seguenti, viene visualizzato un invito particolare: il boot prompt.
+
+Se era stata indicata l'istruzione prompt nel file /etc/lilo.conf;
+se viene premuto il tasto [Shift] (maiuscole), oppure [Ctrl], oppure [Alt];
+se il tasto [Fissamaiuscole] oppure [BlocScorr] risultano inseriti.
+boot:
+Normalmente si utilizza la riga di comando di boot per indicare il nome di una particolare configurazione. In altri casi è il mezzo per specificare un'opzione che per qualche motivo non è attiva automaticamente e si vuole che LILO la passi al kernel.
+
+L'editing di questa riga di comando è abbastanza intuitivo: per cancellare si possono usare i tasti [Backspace], [Canc] e le combinazioni [Ctrl+u] e [Ctrl-x]. Eventualmente, si può ottenere un elenco delle configurazioni, riferite a diverse voci del file /etc/lilo.conf, attraverso la pressione del tasto [Tab]. Si conferma con il tasto [Invio].
+
+Il vero problema è tastiera: si deve considerare che la disposizione dei tasti è quella statunitense.
+
+La sintassi di quanto si può inserire attraverso la riga di comando è la seguente.
+
+[<configurazione> [<opzione>... ]]
+
+Se si preme semplicemente [Invio] viene avviata la configurazione predefinita, altrimenti è obbligatorio l'inserimento del nome di questa, eventualmente seguita da altre opzioni.
+
+<!>   I vari argomenti inseriti attraverso la riga di comando (il nome della configurazione e le altre opzioni eventuali) sono separati tra loro attraverso uno spazio. Per questo, un argomento non può contenere spazi.
+
+Nella sezione `Opzioni di boot' vengono descritti alcuni tipi di opzioni che possono essere inseriti in una riga di comando di boot. Per una descrizione più ampia conviene consultare il BootPrompt HOWTO.
+
+9.3 Loadlin
+Se si utilizza ancora il Dos, si può avviare un kernel Linux attraverso il programma loadlin, quando è in funzione il Dos. loadlin è quindi un programma Dos e come tale deve poter raggiungere il file del kernel all'interno di una partizione Dos.
+
+Per conoscere i dettagli sul funzionamento di loadlin conviene consultare la documentazione allegata al programma.
+
+Preparazione
+Prima di pensare a tutto questo, occorre almeno aver avviato una volta il sistema Linux. Se si aveva deciso di non utilizzare LILO per l'avvio, l'unica possibiltà è data da un dischetto di avvio, contenente solo il kernel.
+
+Attraverso Linux si deve copiare il programma LOADLIN.EXE nel disco Dos e con esso anche il file del kernel.
+
+A questo punto si può chiudere il sistema nel modo tradizionale e riavviare il computer facendo in modo di mettere in funzione il sistema operativo Dos.
+
+# shutdown -h now
+
+Una volta riavviato il sistema operativo Dos si dovrebbero trovare i due file copiati poco prima attraverso Linux: VMLINUZ e LOADLIN.EXE.
+
+Avvio di Linux
+Per avviare in modo semplice il sistema Linux mentre è in funzione il Dos, dovrebbe bastare il comando seguente. Si suppone che la partizione dedicata a Linux sia la seconda del primo disco fisso IDE.
+
+C:\> LOADLIN c:\vmlinuz root=/dev/hda2 ro
+
+In pratica, si dice a LOADLIN.EXE di caricare il file del kernel C:\VMLINUZ in modo da utilizzare la seconda partizione del primo disco fisso (/dev/hda2) cominciando con un accesso in sola lettura (in modo da permetterne il controllo prima che il sistema sia messo completamente in funzione).
+
+Prima di avviare LOADLIN.EXE, vale forse la pena di disattivare gli eventuali sistemi di cache del disco fisso. Se si usa SMARTDRV.EXE conviene scaricare la memoria cache nel modo seguente.
+
+C:\> SMARTDRV /C
+
+In generale, la cosa migliore dovrebbe essere l'inserimento della chiamata a LOADLIN.EXE all'interno di un sistema AUTOEXEC.BAT e CONFIG.SYS che permetta l'avvio di configurazioni multiple.
+
+Avvio di Linux su un filesystem UMSDOS
+L'utilizzo del programma LOADLIN.EXE è il modo più ragionevole di avviare un sistema Linux installato in un filesystem UMSDOS. Ciò, proprio perché un filesystem UMSDOS si trova nella stessa partizione utilizzata per il Dos.
+
+C:\> LOADLIN c:\vmlinuz root=/dev/hda1 rw
+
+In questo caso, si dice a LOADLIN.EXE di caricare il file del kernel C:\VMLINUZ in modo da utilizzare la prima partizione del primo disco fisso (/dev/hda1) cominciando con un accesso sia in lettura che in scrittura.
+
+<!>   Con un filesystem UMSDOS non è possibile iniziare in sola lettura, di conseguenza, l'unico modo per controllare e correggere eventuali errori in questo tipo di filesystem è l'uso di programmi Dos quali CHKDSK, SCANDISK e simili.
+
+9.4 Opzioni di boot
+Il kernel non è sempre in grado di individuare da solo tutti i dispositivi fisici installati e a volte si desidera comunque di potergli dare delle istruzioni prima del suo avvio. Si tratta di opzioni che gli possono essere passate in vari modi:
+
+attraverso il boot prompt quando si avvia attraverso LILO;
+attraverso un'istruzione append, contenuta nel file /etc/lilo.conf, quando si avvia attraverso LILO;
+attraverso gli argomenti di loadlin.
+Queste opzioni, quando devono essere fornite, vengono indicate tutte insieme, separate da uno spazio. Ogni opzione non può contenere spazi.
+
+Nella sezione seguente vengono indicati solo alcuni tipi di queste opzioni. In particolare, non vengono descritte quelle specifiche per i vari tipi di hardware.
+
+Opzioni generali
+Si tratta di indicazioni date al kernel senza riferimenti a particolari tipi di hardware.
+
+Filesystem root
+root=<dispositivo>
+
+Permette di definire un dispositivo differente da quello predefinito per montare il filesystem root.
+
+ro
+
+Permette di definire un accesso iniziale al filesystem root in sola lettura. Questa è la condizione necessaria per poter eseguire un controllo dell'integrità del filesystem prima di passare alla gestione normale.
+
+rw
+
+Permette di definire un accesso iniziale al filesystem root in lettura-scrittura.
+
+Memoria
+mem=<dimensione>
+
+In caso di necessità, permette di definire la dimensione di memoria RAM effettivamente a disposizione. Si può indicare un numero esadecimale nella forma 0x..., oppure un numero decimale normale, eventualmente seguito dalla lettera k, che sta a indicare Kilobyte, oppure dalla lettera M, che sta a indicare Megabyte.
+
+Varie
+init=<programma-iniziale>
+
+Permette di definire il nome, completo di percorso, del programma che deve svolgere le funzioni di init. Il kernel provvede da solo a cercare /sbin/init, e in alternativa /etc/init. Come ultima risorsa tenta di avviare /bin/sh. Se per qualunque motivo non funziona il programma init, si può tentare di avviare il sistema facendo partire la shell al suo posto.
+
+reserve=<indirizzo-I/O>,<estensione>[,<indirizzo-I/O>,<estensione>]...
+
+Permette di isolare una o più zone di indirizzi di I/O in modo che il kernel non esegua alcun tentativo di identificazione di componenti in quella zona. Di solito, dopo una opzione del genere, si inseriscono le dichiarazioni esplicite dei dispositivi che ci sono effettivamente. Il primo valore, quello che esprime l'indirizzo, viene espresso attraverso una notazione esadecimale del tipo consueto (0x...), mentre il secondo è un numero decimale.
+
+Esempi
+Come è stato accennato nella sezione `Opzioni di boot', esistono diversi modi per fornire al kernel delle opzioni di avvio (o di boot). Questi esempi dovrebbero chiarire le possibilità che ci sono a disposizione.
+
+---------
+
+boot: linux1 root=/dev/hda1 ro
+
+Attraverso la riga di comando di boot di LILO, si avvia la configurazione identificata dal nome linux1, si indica la partizione che si vuole montare come filesystem root e l'accesso iniziale in sola lettura.
+
+---------
+
+C:\> loadlin c:\vmlinuz root=/dev/hda1 ro
+
+Come nell'esempio precedente, ma si avvia il sistema attraverso il programma loadlin utilizzando il kernel vmlinuz.
+
+---------
+
+append="reserve=0x300,64 ether=11,0x300,eth0 ether=12,0x320,eth1"
+Attraverso l'istruzione append del file /etc/lilo.conf si riserva la zona di indirizzi I/O tra 0x300 e 0x33F e di seguito si specificano due schede di rete Ethernet che utilizzano proprio quella zona di indirizzi.

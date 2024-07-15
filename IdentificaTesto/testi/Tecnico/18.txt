@@ -1,0 +1,51 @@
+Cos’è una CPU?
+
+La CPU è il cuore operativo del computer. In particolare, contiene la potenza di calcolo essenziale per le attività che il PC deve svolgere ogni giorno.
+Per capire l’importanza della CPU, è necessario comprendere il funzionamento di base di un computer. I calcoli del computer sono eseguiti dalle cosiddette istruzioni macchina, che possono essere considerate come istruzioni per il processore. Tutte le istruzioni della macchina possono essere rappresentate come sequenze di uno e di zero, cioè nel cosiddetto codice binario. Questo accade anche nel computer, perché la CPU può elaborare solo istruzioni binarie.
+I diversi tipi di CPU
+Non esiste un solo processore, ma un’intera gamma di CPU diverse. Queste si distinguono principalmente per il numero di core. Ma il campo di applicazione delle CPU permette anche di differenziare i diversi tipi di processore. Naturalmente, anche i produttori variano. Il mercato è dominato da due aziende in particolare, Intel e AMD.
+Differenziazione in base al numero di core del processore
+Processori single-core
+Le CPU single-core hanno un solo core. Ciò significa che possono elaborare un solo compito alla volta. Sono le CPU più vecchie e oggi vengono utilizzate raramente perché molte applicazioni moderne prediligono la gestione di più processi contemporaneamente.
+Processori multicore
+La controparte dei processori single-core sono le CPU multicore. Sono caratterizzate dal fatto di avere più core. Spesso hanno due o quattro core (dual o quad core), ma non è raro che il loro numero sia maggiore. I processori con un numero molto elevato di core sono utilizzati soprattutto nel funzionamento dei server. Il vantaggio dei processori multicore è evidente: grazie alle diverse unità indipendenti, sono in grado di eseguire diversi compiti in parallelo, consentendo così un lavoro più fluido e veloce.
+Differenziazione in base all’uso previsto
+CPU per desktop
+Se lavorate con un PC tradizionale, siete in possesso di una cosiddetta CPU per desktop. Si tratta dei processori installati nei PC. Molte CPU per desktop moderni includono anche una scheda grafica integrata, sufficiente per le applicazioni standard.
+CPU per dispositivi mobili
+Fondamentalmente, non ci sono differenze sostanziali tra i processori per desktop e quelli per dispositivi mobili. Nella maggior parte dei casi, si differenziano principalmente per il consumo di energia. In generale, tuttavia, le CPU per desktop sono considerate più potenti delle loro controparti installate in dispositivi mobili, come i notebook.
+CPU per server
+I processori utilizzati all’interno dei server sono diversi dalle CPU dei computer portatili e dei PC: hanno un numero di core molto più elevato per eseguire in modo efficiente molte operazioni simultanee. Inoltre, i server di solito funzionano 24 ore su 24, quindi il carico elevato può essere compensato con il numero di core.
+I compiti centrali della CPU
+Il processore esegue le operazioni essenziali del computer. In linea di massima, si possono distinguere tre compiti principali di una CPU:
+Elaborazione delle istruzioni. L’unità di calcolo è responsabile dell’elaborazione delle istruzioni ricevute e della restituzione dei risultati corrispondenti.
+Comunicazione con i dispositivi di ingresso e uscita o con la periferica. L’unità di controllo è responsabile di questo aspetto. Si occupa anche dell’interazione tra i singoli componenti del processore.
+Scambio di dati. Un PC tradizionale è costituito da molti componenti, ad esempio diversi tipi di memoria o la scheda grafica. Con il sistema bus, un processore garantisce l’invio di dati tra i diversi componenti.
+Componenti di una CPU
+La maggior parte delle CPU moderne è composta da diversi core identici. All’interno di questi core sono presenti vari componenti; tuttavia, come minimo, un core comprende un’unità di calcolo, registri, un’unità di controllo e un sistema bus.
+Unità di calcolo: l’unità di calcolo, nota anche con l’abbreviazione Arithmetic Logic Unit o ALU, è responsabile del calcolo delle funzioni aritmetiche e logiche.
+Registri: i registri sono memorie a cui si può accedere in modo particolarmente rapido grazie alla loro prossimità all’unità di calcolo.
+Unità di controllo: l’unità di controllo è nota anche come centralina ed è essenzialmente responsabile della sequenza di elaborazione dei comandi.
+Sistema bus: il sistema bus è costituito da linee di dati che collegano tra loro i componenti di un PC.
+Oltre a questi componenti centrali, le CPU possono contenere anche altri componenti che sono diventati indispensabili nei processori moderni.
+Memory Management Unit: Memory Management Unit, o MMU, gestisce l’accesso alla RAM del computer traducendo gli indirizzi di memoria virtuale in indirizzi fisici.
+Cache: la cache è una memoria temporanea, spesso a più livelli.
+Unità in virgola mobile: l’unità a virgola mobile è un’unità di calcolo specializzata per la gestione dei numeri decimali.
+Funzionalità di una CPU
+L’elaborazione delle singole istruzioni all’interno della CPU è incredibilmente veloce. Ad esempio, quando si preme un tasto sulla tastiera, di solito si vede subito la lettera corrispondente sul monitor. Tuttavia, sono necessari molti passaggi in background per garantire che l’elaborazione delle istruzioni avvenga senza intoppi. La sequenza di base dell’elaborazione dei comandi può essere suddivisa in quattro fasi fondamentali:
+Fetch: in primo luogo, l’indirizzo dell’istruzione successiva della macchina viene letto dalla RAM del computer.
+Decode: quindi il comando viene decodificato e i circuiti corrispondenti vengono caricati.
+Fetch Operands: successivamente, tutti i parametri necessari per il comando vengono caricati nei registri. I valori scritti nei registri si trovano nella memoria principale, nella RAM o nella cache.
+Execute: infine, avviene l’esecuzione del comando.
+Queste quattro fasi si ripetono praticamente in un ciclo continuo: non appena è stata completata un’istruzione, viene selezionato il comando successivo ed elaborato dal processore. L’ordine di esecuzione dei comandi dipende da procedure di pianificazione, grazie alle quali si garantisce che il sistema si comporti in modo equilibrato.
+Caratteristiche della prestazione
+La potenza di un processore dipende da diversi fattori. Da un lato, la cosiddetta lunghezza delle parole è rilevante, poiché specifica quanto può essere lunga una parola macchina. Ad esempio, determina quanti bit possono essere letti contemporaneamente dalla RAM o in quale intervallo possono essere elaborati numeri interi o in virgola mobile. I computer più comuni hanno un’architettura di 32 o 64 bit.
+Anche il numero di core della CPU gioca un ruolo decisivo nella valutazione delle prestazioni di un processore: più core ha un processore, più compiti possono essere elaborati in parallelo. Anche la distribuzione del carico all’interno del sistema funziona meglio con un numero crescente di core.
+Ma non è solo il numero di core a fare la differenza. Almeno altrettanto importante per le prestazioni di una CPU è la frequenza di clock a cui operano i singoli core. La frequenza di clock è specificata in hertz o gigahertz. In pratica, maggiore è la frequenza di clock, maggiore è il numero di istruzioni macchina che la CPU può elaborare al secondo.
+Tuttavia, anche l’orologio di base della scheda madre svolge un ruolo nella frequenza di clock, che può essere impostata manualmente nel BIOS per alcune schede madri. Inoltre, la frequenza di clock non può essere aumentata a piacere, ma è sempre limitata dalla temperatura della CPU. Se l’aumento è eccessivo, il processore potrebbe danneggiarsi. Anche per questo motivo, l’overclocking della CPU richiede un certo tipo di conoscenze.
+Frequenza di clock e numero di core della CPU
+Cos’è più determinante per le prestazioni di una CPU: il numero di core o la frequenza di clock? Purtroppo, non esiste una risposta definitiva a questa domanda. Dipende non solo dall’utilizzo che se ne fa, ma anche dal processore stesso.
+I processori moderni sono spesso più efficienti nell’elaborazione delle istruzioni e possono quindi fornire le stesse prestazioni con una frequenza di clock inferiore rispetto ai processori più vecchi con una frequenza di clock superiore. Inoltre, le CPU moderne offrono spesso la possibilità di multithreading o hyperthreading, in modo che diversi thread possano essere eseguiti in parallelo su un core.
+Se sul computer eseguite applicazioni che traggono vantaggio da più core e dalla gestione parallela dei processi, allora vale la pena di ricorrere a un numero di core corrispondentemente elevato per distribuire l’utilizzo della CPU nel miglior modo possibile. Tali applicazioni includono l’uso di macchine virtuali o il rendering. Questo perché il carico di lavoro di tali programmi può essere distribuito molto bene.
+Se utilizzate il vostro PC principalmente per applicazioni che non possono distribuire così bene il loro carico di lavoro, ad esempio i videogiochi per computer, allora è la frequenza di clock a fare la differenza.
+I processori moderni hanno spesso una distribuzione intelligente del carico di lavoro tra i core della CPU. Se il carico di lavoro corrente può essere distribuito in modo efficiente su più core, la CPU procederà a farlo e utilizzerà di conseguenza tutti i core disponibili. I singoli core funzionano quindi a una frequenza di clock inferiore. Tuttavia, se l’uso di più core non è ragionevole o necessario, la frequenza di clock dei core utilizzati viene aumentata.
